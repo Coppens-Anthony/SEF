@@ -1,45 +1,42 @@
 #houses {
   article {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     width: 80%;
     margin: auto auto 2.6666rem;
 
-    p {
-      width: 50%;
-      margin-right: 10%;
-
-      i {
-        margin-bottom: 0.5rem;
-        font-style: italic;
-      }
+    .houses-description {
+      text-align: left;
+      font-size: 0.8rem;
+      margin-bottom: 1.333rem;
+    }
+    .houses-address{
+      margin: 0 0 1.333rem 0;
+      font-weight: 700;
+      font-size: 1rem;
+      text-align: left;
     }
 
     img {
       width: 60%;
       height: 15rem;
       margin: auto;
-      border: 1.5px solid #184AE4;
     }
   }
-
   .secondHouse {
-    text-align: end;
-    margin-left: 10%;
+    flex-direction: column-reverse;
   }
-
-  div {
-    background-color: #184AE4;
-    display: block;
-    width: 35%;
-    text-align: center;
-    border-radius: 15px;
-    margin: auto;
-
-    a{
-      color: white;
-      display: block;
-      padding: 1rem 10%;
+  ul{
+    list-style: disc;
+    margin-left: 15%;
+    margin-bottom: 2.666rem;
+    ::marker{
+      color: #184AE4;
+      font-size: 1rem;
+    }
+    li{
+      font-size: 0.8rem;
+      text-align: left;
     }
   }
 }
@@ -47,16 +44,25 @@
 @media (min-width: 1000px) {
   #houses{
     article{
+      flex-direction: row;
       margin: auto auto 4rem;
+      align-items: center;
+      div{
+        width: 52%;
+        margin-right: 5%;
+      }
       img{
-        width: 20%;
-        height: 15rem;
-        border: 2px solid #184AE4;
+        height: 100%;
+        object-fit: cover;
       }
     }
-    div{
-       width: 20%;
-     }
+    .secondHouse{
+      display: flex;
+      flex-direction: row;
+      div{
+        margin-left: 5%;
+      }
+    }
   }
 
 }
