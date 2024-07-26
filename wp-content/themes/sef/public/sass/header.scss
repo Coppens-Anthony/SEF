@@ -1,0 +1,122 @@
+header {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .4);
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 999;
+
+  #mainNav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 80%;
+    display: flex;
+    align-items: center;
+
+    a{
+      margin-left: 15%;
+      margin-right: 20%;
+      svg{
+        height: 5rem;
+      }
+    }
+
+    #donateMobile {
+      font-size: 1em;
+      color: white;
+      background-color: #184AE4;
+      border-radius: 20px;
+      padding: 0.8rem;
+      border: 1px solid black;
+      margin-right: 5%;
+    }
+
+    label {
+      cursor: pointer;
+      margin-right: 10%;
+      font-size: 1.5rem;
+    }
+
+    input {
+      display: none;
+    }
+
+    input:checked ~ #burgerNav {
+      visibility: visible;
+      right: 0;
+    }
+
+    #burgerNav {
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, .4);
+      display: block;
+      visibility: hidden;
+      position: absolute;
+      right: -50%;
+      top: 8rem;
+      background-color: white;
+      text-align: center;
+      width: 50%;
+      transition: 1s;
+      z-index: 1;
+
+      ul {
+        margin: 1.333333333333333rem 0 0;
+
+        li {
+          padding-bottom: 1.3333333333rem;
+          border-bottom: 1px solid #184AE4;
+          width: 80%;
+          margin: 1.333333333rem auto;
+        }
+
+        .navContact {
+          border-bottom: none;
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .onlyScreen {
+    display: none;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+
+    a{
+      margin-right: 20%;
+      svg{
+        height: 5rem;
+      }
+
+    }
+    ul {
+      width: 70%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    #donateScreen {
+      font-size: 1em;
+      background-color: #184AE4;
+      border-radius: 20px;
+      padding: 0.8rem;
+      border: 1px solid black;
+      margin-right: 5%;
+
+      a {
+        color: white;
+      }
+    }
+  }
+
+  @media (min-width: 1000px) {
+    #mainNav {
+      display: none;
+    }
+    .onlyScreen {
+      display: flex;
+      justify-content: right;
+    }
+  }
+}
