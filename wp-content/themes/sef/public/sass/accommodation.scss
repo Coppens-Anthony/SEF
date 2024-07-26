@@ -1,0 +1,62 @@
+#houses {
+  article {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto auto 2.6666rem;
+
+    p {
+      width: 50%;
+      margin-right: 10%;
+
+      i {
+        margin-bottom: 0.5rem;
+        font-style: italic;
+      }
+    }
+
+    img {
+      width: 60%;
+      height: 15rem;
+      margin: auto;
+      border: 1.5px solid #184AE4;
+    }
+  }
+
+  .secondHouse {
+    text-align: end;
+    margin-left: 10%;
+  }
+
+  div {
+    background-color: #184AE4;
+    display: block;
+    width: 35%;
+    text-align: center;
+    border-radius: 15px;
+    margin: auto;
+
+    a{
+      color: white;
+      display: block;
+      padding: 1rem 10%;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  #houses{
+    article{
+      margin: auto auto 4rem;
+      img{
+        width: 20%;
+        height: 15rem;
+        border: 2px solid #184AE4;
+      }
+    }
+    div{
+       width: 20%;
+     }
+  }
+
+}

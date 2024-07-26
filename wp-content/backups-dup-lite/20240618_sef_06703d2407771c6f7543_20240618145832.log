@@ -1,0 +1,75 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: 18 June 2024 14 h 58 min
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.5.9
+WORDPRESS:	6.4.3
+PHP INFO:	8.3.7 | SAPI: cgi-fcgi
+SERVER:		nginx/1.25.2 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 4294967296 (128M default) 
+MEMORY STACK: 12MB
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP(query limit - 100)
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Not Supported
+TABLES: total:13 | filtered:0 | create:13
+FILTERED: []
+SQL CREATED: 20240618_sef_06703d2407771c6f7543_20240618145832_database.sql
+SQL FILE SIZE: 540.83KB (553809)
+SQL FILE TIME: 2024-06-18 14:58:41
+SQL RUNTIME: 0.61 sec.
+
+********************************************************************************
+ARCHIVE (ZIP):
+********************************************************************************
+ARCHIVE DIR:  C:/Users/ZZ BACKDOOR/Desktop/SEF
+ARCHIVE FILE: 20240618_sef_06703d2407771c6f7543_20240618145832_archive.zip
+FILTERS: *OFF*
+DIRS:
+	not set
+FILES:
+	not set
+EXTS:  not set
+----------------------------------------
+COMPRESSING
+SIZE:	104.73MB
+STATS:	Dirs 592 | Files 4,613
+SQL ADDED: 20240618_sef_06703d2407771c6f7543_20240618145832_database.sql
+ZipArchive Object
+(
+    [lastId] => 5204
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 5205
+    [filename] => C:\Users\ZZ BACKDOOR\Desktop\SEF\wp-content\backups-dup-lite\tmp\20240618_sef_06703d2407771c6f7543_20240618145832_archive.zip
+    [comment] => 
+)
+
+FILE ADDED TO ZIP: 5204
+COMPRESSION RESULT: '1'
+COMPRESSED SIZE: 40.25MB
+ARCHIVE RUNTIME: 49.20 sec.
+MEMORY STACK: 12MB
+building installer
+ARCHIVE CONSISTENCY TEST: PASS
+
+********************************************************************************
+INTEGRITY CHECKS:
+********************************************************************************
+SQL FILE: 540.83KB
+INSTALLER FILE: 73.47KB
+ARCHIVE FILE: 42.1MB 
+EXPECTED FILE/DIRECTORY COUNT: 5,205
+ACTUAL FILE/DIRECTORY COUNT: 5,204
+ARCHIVE CONSISTENCY TEST: Pass
+
+********************************************************************************
+RECORD ID:[1]
+TOTAL PROCESS RUNTIME: 51.23 sec.
+PEAK PHP MEMORY USED: 14MB
+DONE PROCESSING => 20240618_sef 18 June 2024 14 h 59 min
+

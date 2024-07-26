@@ -1,0 +1,181 @@
+#help {
+  article {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.3333rem;
+
+      li {
+        width: 60%;
+
+        p {
+          text-align: center;
+          padding: 2rem 5%;
+          margin: auto;
+          font-weight: 700;
+        }
+      }
+
+      #first {
+        background-color: #6488F7;
+        margin-right: 5%;
+      }
+
+      #second {
+        background-color: #79B8E9;
+        padding-top: 1rem;
+      }
+
+      #third {
+        background-color: #B0C2F8;
+        margin-right: 5%;
+      }
+
+      #fourth {
+        background-color: #7991DA;
+      }
+    }
+  }
+}
+
+.donateCategory {
+  width: 60%;
+  margin: auto;
+
+  div {
+    border: 1.5px solid #184AE4;
+    border-radius: 20px;
+    display: flex;
+    margin-bottom: 1.3333rem;
+    position: relative;
+
+    a {
+      padding: 0.75rem 65% 0.75rem 5%;
+    }
+
+    a:hover ~ .icon {
+      right: 20%;
+      transition: 0.5s;
+    }
+
+    .icon {
+      position: absolute;
+      top: 0.4rem;
+      right: 10%;
+      font-size: 1.3rem;
+      transition: 0.5s;
+    }
+  }
+}
+
+#volunteer, #store {
+  div {
+    margin: auto;
+    width: 80%;
+    display: flex;
+
+    p {
+      width: 80%;
+      text-align: center;
+    }
+
+    img {
+      width: 80%;
+      height: 8rem;
+      margin: auto auto auto 5%;
+      border-radius: 15px;
+    }
+  }
+
+  .redirect {
+    background-color: #184AE4;
+    margin: 2.6666rem auto;
+    display: block;
+    width: 35%;
+    text-align: center;
+    border-radius: 15px;
+
+    a {
+      color: white;
+      display: block;
+      padding: 1.5rem 8%;
+    }
+  }
+
+  .redirectToStore {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 2.6666rem auto;
+
+    a {
+      color: #184AE4;
+      border-bottom: 2px solid #184AE4;
+      margin: auto;
+      padding: 2%;
+
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  #donateImg {
+    height: 18rem;
+  }
+  #help {
+    article {
+      flex-direction: row;
+
+      ul {
+        li {
+          p {
+            padding: 3rem;
+          }
+        }
+      }
+    }
+
+    .firstUl {
+      margin-right: 2.5%;
+    }
+  }
+  .donateCategory {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+
+    div {
+      width: 45%;
+
+      a {
+        padding: 0.75rem 78% 0.75rem 5%;
+      }
+    }
+  }
+
+  #volunteer, #store {
+    div {
+      img {
+        height: 18rem;
+      }
+    }
+
+    .redirect {
+      width: 20%;
+
+      a {
+        padding: 1.5rem 2%;
+        width: 100%;
+        display: block;
+      }
+    }
+
+    .redirectToStore {
+      font-size: 1.7rem;
+    }
+  }
+}

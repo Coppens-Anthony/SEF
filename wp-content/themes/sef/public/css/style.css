@@ -1,0 +1,1219 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+body {
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  font-family: Raleway, Roboto, Montserrat, sans-serif;
+  overflow-x: hidden;
+}
+
+.main {
+  color: #184AE4;
+  font-weight: 700;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.blue {
+  color: #184AE4;
+}
+
+.red {
+  color: #FF0000;
+}
+
+p {
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important; /* 2 */
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important; /* 3 */
+}
+
+abbr {
+  text-decoration: none;
+}
+
+header {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 999;
+}
+header #mainNav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+header #mainNav a {
+  margin-left: 15%;
+  margin-right: 20%;
+}
+header #mainNav a svg {
+  height: 5rem;
+}
+header #mainNav #donateMobile {
+  font-size: 1em;
+  color: white;
+  background-color: #184AE4;
+  border-radius: 20px;
+  padding: 0.8rem;
+  border: 1px solid black;
+  margin-right: 5%;
+}
+header #mainNav label {
+  cursor: pointer;
+  margin-right: 10%;
+  font-size: 1.5rem;
+}
+header #mainNav input {
+  display: none;
+}
+header #mainNav input:checked ~ #burgerNav {
+  visibility: visible;
+  right: 0;
+}
+header #mainNav #burgerNav {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  display: block;
+  visibility: hidden;
+  position: absolute;
+  right: -50%;
+  top: 8rem;
+  background-color: white;
+  text-align: center;
+  width: 50%;
+  transition: 1s;
+  z-index: 1;
+}
+header #mainNav #burgerNav ul {
+  margin: 1.3333333333rem 0 0;
+}
+header #mainNav #burgerNav ul li {
+  padding-bottom: 1.3333333333rem;
+  border-bottom: 1px solid #184AE4;
+  width: 80%;
+  margin: 1.333333333rem auto;
+}
+header #mainNav #burgerNav ul .navContact {
+  border-bottom: none;
+  padding: 0;
+}
+header .onlyScreen {
+  display: none;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 100%;
+}
+header .onlyScreen a {
+  margin-right: 20%;
+}
+header .onlyScreen a svg {
+  height: 5rem;
+}
+header .onlyScreen ul {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header .onlyScreen #donateScreen {
+  font-size: 1em;
+  background-color: #184AE4;
+  border-radius: 20px;
+  padding: 0.8rem;
+  border: 1px solid black;
+  margin-right: 5%;
+}
+header .onlyScreen #donateScreen a {
+  color: white;
+}
+@media (min-width: 1000px) {
+  header #mainNav {
+    display: none;
+  }
+  header .onlyScreen {
+    display: flex;
+    justify-content: right;
+  }
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem auto 5rem;
+}
+.intro p {
+  width: 60%;
+  margin-bottom: 2.6666666rem;
+}
+.intro b {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 2rem;
+}
+.intro img {
+  width: 70%;
+  margin: auto;
+  height: 70%;
+  border-radius: 15px;
+}
+
+@media (min-width: 1000px) {
+  .intro {
+    margin: 6rem auto 5rem;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+  }
+  .intro p {
+    margin: 0;
+    width: 40%;
+  }
+  .intro img {
+    width: 50%;
+  }
+}
+.sections {
+  margin-bottom: 4rem;
+}
+.sections h2 {
+  color: #184AE4;
+  border-bottom: 2px solid #184AE4;
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-left: 10%;
+  margin-bottom: 2.6666666rem;
+}
+
+@media (min-width: 1000px) {
+  .sections {
+    margin-bottom: 5rem;
+  }
+  .sections h2 {
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+  }
+}
+.timeline {
+  position: relative;
+  margin: auto auto 5rem;
+  width: 80%;
+}
+.timeline:after {
+  content: "";
+  position: absolute;
+  width: 1%;
+  height: 100%;
+  background-color: #184ae4;
+  top: 0;
+  left: 2.8%;
+  margin-left: -0.5%;
+  z-index: 1;
+}
+
+.timeline_container {
+  position: relative;
+  margin-left: 20%;
+  width: 80%;
+  padding-bottom: 2.6666666rem;
+}
+.timeline_container svg {
+  width: 7%;
+  position: absolute;
+  left: -25%;
+  top: 30%;
+  z-index: 10;
+}
+
+.text-box {
+  text-align: center;
+  position: relative;
+  padding: 1.2rem 5%;
+  border: 1.5px solid #184ae4;
+  box-shadow: 0 0 10px 0 rgba(24, 78, 228, 0.4);
+}
+.text-box h4 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+}
+.text-box p {
+  font-size: 0.6rem;
+}
+
+.last_timeline_container {
+  padding-bottom: 0;
+}
+
+@media (min-width: 1000px) {
+  .timeline {
+    margin-bottom: 5rem;
+  }
+  .timeline:after {
+    left: 50%;
+    margin-left: -0.5%;
+  }
+  .timeline svg {
+    width: 4%;
+    left: 37.5%;
+    transform: translateX(-50%);
+  }
+  .timeline .text-box {
+    width: 45%;
+  }
+  .timeline .text-box:after {
+    content: none;
+  }
+  .timeline .leftBox {
+    margin-left: -25%;
+  }
+  .timeline .rightBox {
+    margin-left: 55%;
+  }
+}
+#missions p {
+  width: 60%;
+  margin-bottom: 1.3333rem;
+}
+#missions img {
+  width: 70%;
+  height: 12rem;
+  margin: auto 15%;
+  border-radius: 15px;
+}
+
+@media (min-width: 1000px) {
+  #missions div {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    width: 80%;
+  }
+  #missions p {
+    width: 50%;
+    margin: 0 10% 0 0;
+  }
+  #missions img {
+    width: 70%;
+    height: 15rem;
+    margin: auto;
+  }
+}
+#staff ul {
+  display: flex;
+  overflow: scroll;
+}
+#staff ul li {
+  margin-left: 11%;
+  margin-right: 25%;
+}
+#staff ul li .staffPicture {
+  width: 150%;
+  height: 12rem;
+}
+#staff ul li figcaption {
+  margin-top: 0.75rem;
+  display: block;
+  white-space: normal;
+  width: 150%;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 1000px) {
+  #staff ul {
+    width: 80%;
+    margin: auto;
+  }
+  #staff ul li {
+    margin-left: 5%;
+  }
+  #staff ul li .staffPicture {
+    width: 200%;
+  }
+  #staff ul li figcaption {
+    width: 200%;
+  }
+}
+#faq .toContactForm {
+  color: white;
+  background-color: #184AE4;
+  display: block;
+  width: 35%;
+  padding: 1.5%;
+  text-align: center;
+  border-radius: 15px;
+  margin-left: 55%;
+  margin-top: -2.6666rem;
+}
+#faq div {
+  margin: 2.666666666rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border: 1.5px solid #184AE4;
+  padding: 2%;
+  position: relative;
+}
+#faq div label {
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 0.2rem 2%;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+#faq div input {
+  display: none;
+}
+#faq div :checked ~ .responses {
+  display: block;
+}
+#faq div .responses {
+  display: none;
+  font-size: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 1000px) {
+  #faq .toContactForm {
+    width: 20%;
+    margin-left: 70%;
+  }
+  #faq div {
+    margin: 3rem auto;
+    padding: 0;
+    width: 80%;
+  }
+  #faq div label {
+    padding: 1.5rem 0;
+  }
+  #faq div .responses {
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+}
+#testimony a {
+  color: white;
+  background-color: #184AE4;
+  display: block;
+  width: 30%;
+  padding: 1.5%;
+  text-align: center;
+  border-radius: 15px;
+  margin-left: 60%;
+  margin-top: -2.6666rem;
+  margin-bottom: 2.6666rem;
+}
+#testimony .firstTestimony {
+  border-top: 1px solid #184AE4;
+}
+#testimony article {
+  border-bottom: 1px solid #184AE4;
+  font-size: 0.8rem;
+  margin: 1.333333rem auto;
+  width: 80%;
+}
+#testimony article h3 {
+  font-weight: 700;
+  margin-top: 0.75rem;
+}
+#testimony article i {
+  font-style: italic;
+}
+#testimony article .date {
+  margin-bottom: 1.333rem;
+}
+#testimony article p {
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 1000px) {
+  #testimony a {
+    width: 20%;
+    margin-left: 70%;
+  }
+  #testimony .firstTestimony {
+    border-top: 2px solid #184AE4;
+  }
+  #testimony article {
+    width: 80%;
+    margin: 4rem auto;
+    border-bottom: 2px solid #184AE4;
+  }
+  #testimony article h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+footer {
+  background-color: #313131;
+  color: white;
+}
+footer a {
+  color: white;
+  font-size: 0.6rem;
+}
+footer .footer-information {
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
+  padding-top: 1.333rem;
+  margin-bottom: 2.6666rem;
+}
+footer .footer-information li {
+  font-size: 0.6rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+footer .footer-information #footerCoords {
+  text-align: end;
+  margin-left: 25%;
+}
+footer .map iframe {
+  width: 80%;
+  height: 18rem;
+  margin: 0 10% 2.6666rem;
+}
+footer small {
+  display: block;
+  font-size: 0.5rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+footer small a {
+  font-size: 0.5rem;
+  text-decoration: underline;
+}
+
+@media (min-width: 1000px) {
+  footer {
+    position: relative;
+  }
+  footer a {
+    font-size: 0.8rem;
+  }
+  footer .footer-information {
+    margin: auto auto 6rem;
+    padding-top: 4rem;
+  }
+  footer .footer-information li {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  footer .map iframe {
+    width: 30%;
+    height: 15rem;
+    position: absolute;
+    top: 2rem;
+    right: -5%;
+  }
+  footer small {
+    font-size: 0.8rem;
+  }
+  footer small a {
+    font-size: 0.8rem;
+  }
+}
+.intro_stores {
+  margin: 4rem auto 5rem;
+  position: relative;
+}
+.intro_stores p {
+  width: 60%;
+}
+.intro_stores img {
+  width: 30%;
+  height: 6rem;
+  position: absolute;
+}
+.intro_stores #clothe {
+  top: 18rem;
+  left: 25%;
+}
+.intro_stores #book {
+  top: 20rem;
+  left: 45%;
+}
+.intro_stores #furniture {
+  top: 23rem;
+  left: 28%;
+}
+
+#stores {
+  margin-top: 18rem;
+}
+#stores article {
+  width: 80%;
+  border: 1.5px solid #184AE4;
+  margin: 0 auto 1.333rem;
+  border-radius: 10px;
+  text-align: center;
+}
+#stores article h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 1.333rem 0;
+}
+#stores article div {
+  display: flex;
+  font-size: 0.6rem;
+}
+#stores article div img {
+  width: 50%;
+  height: 50%;
+  margin: 0 0 1.333rem 10%;
+}
+#stores article div p {
+  width: 40%;
+  margin-left: 10%;
+}
+
+#table table {
+  font-size: 0.6rem;
+  width: 80%;
+  margin: auto;
+}
+#table table tr, #table table td, #table table th {
+  text-align: center;
+  border: 1px solid black;
+  padding: 3%;
+  font-weight: 700;
+}
+#table table td {
+  color: #184AE4;
+  font-size: 0.5rem;
+}
+#table table .day {
+  display: block;
+  border: none;
+}
+#table table .infoSup {
+  font-size: 0.8rem;
+}
+#table small {
+  font-size: 0.5rem;
+  margin: auto;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+@media (min-width: 1000px) {
+  .intro_stores p {
+    width: 30%;
+    margin: auto 0 auto 20%;
+    padding-top: 1.5rem;
+  }
+  .intro_stores img {
+    width: 10%;
+    height: 7rem;
+  }
+  .intro_stores #clothe {
+    top: 0;
+    left: 60%;
+  }
+  .intro_stores #book {
+    top: 3rem;
+    left: 68%;
+  }
+  .intro_stores #furniture {
+    top: 6.5rem;
+    left: 63%;
+  }
+  #stores {
+    margin-top: 8rem;
+  }
+  #stores div {
+    display: flex;
+    width: 80%;
+    margin: auto;
+  }
+  #stores div article {
+    width: 30%;
+    border: 2px solid #184AE4;
+  }
+  #stores div article div {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  #stores div article div img {
+    margin: auto auto 2rem;
+  }
+  #stores div article div p {
+    width: 80%;
+    margin: auto auto 1rem;
+  }
+  #table table {
+    font-size: 1.2rem;
+  }
+  #table table td, #table table .infoSup {
+    font-size: 1rem;
+  }
+  #table small {
+    font-size: 0.8rem;
+    margin: 1rem auto;
+    text-align: center;
+    display: block;
+  }
+}
+#houses article {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto auto 2.6666rem;
+}
+#houses article p {
+  width: 50%;
+  margin-right: 10%;
+}
+#houses article p i {
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+#houses article img {
+  width: 60%;
+  height: 15rem;
+  margin: auto;
+  border: 1.5px solid #184AE4;
+}
+#houses .secondHouse {
+  text-align: end;
+  margin-left: 10%;
+}
+#houses div {
+  background-color: #184AE4;
+  display: block;
+  width: 35%;
+  text-align: center;
+  border-radius: 15px;
+  margin: auto;
+}
+#houses div a {
+  color: white;
+  display: block;
+  padding: 1rem 10%;
+}
+
+@media (min-width: 1000px) {
+  #houses article {
+    margin: auto auto 4rem;
+  }
+  #houses article img {
+    width: 20%;
+    height: 15rem;
+    border: 2px solid #184AE4;
+  }
+  #houses div {
+    width: 20%;
+  }
+}
+#help article {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 80%;
+}
+#help article ul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.3333rem;
+}
+#help article ul li {
+  width: 60%;
+}
+#help article ul li p {
+  text-align: center;
+  padding: 2rem 5%;
+  margin: auto;
+  font-weight: 700;
+}
+#help article ul #first {
+  background-color: #6488F7;
+  margin-right: 5%;
+}
+#help article ul #second {
+  background-color: #79B8E9;
+  padding-top: 1rem;
+}
+#help article ul #third {
+  background-color: #B0C2F8;
+  margin-right: 5%;
+}
+#help article ul #fourth {
+  background-color: #7991DA;
+}
+
+.donateCategory {
+  width: 60%;
+  margin: auto;
+}
+.donateCategory div {
+  border: 1.5px solid #184AE4;
+  border-radius: 20px;
+  display: flex;
+  margin-bottom: 1.3333rem;
+  position: relative;
+}
+.donateCategory div a {
+  padding: 0.75rem 65% 0.75rem 5%;
+}
+.donateCategory div a:hover ~ .icon {
+  right: 20%;
+  transition: 0.5s;
+}
+.donateCategory div .icon {
+  position: absolute;
+  top: 0.4rem;
+  right: 10%;
+  font-size: 1.3rem;
+  transition: 0.5s;
+}
+
+#volunteer div, #store div {
+  margin: auto;
+  width: 80%;
+  display: flex;
+}
+#volunteer div p, #store div p {
+  width: 80%;
+  text-align: center;
+}
+#volunteer div img, #store div img {
+  width: 80%;
+  height: 8rem;
+  margin: auto auto auto 5%;
+  border-radius: 15px;
+}
+#volunteer .redirect, #store .redirect {
+  background-color: #184AE4;
+  margin: 2.6666rem auto;
+  display: block;
+  width: 35%;
+  text-align: center;
+  border-radius: 15px;
+}
+#volunteer .redirect a, #store .redirect a {
+  color: white;
+  display: block;
+  padding: 1.5rem 8%;
+}
+#volunteer .redirectToStore, #store .redirectToStore {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 2.6666rem auto;
+}
+#volunteer .redirectToStore a, #store .redirectToStore a {
+  color: #184AE4;
+  border-bottom: 2px solid #184AE4;
+  margin: auto;
+  padding: 2%;
+}
+
+@media (min-width: 1000px) {
+  #donateImg {
+    height: 18rem;
+  }
+  #help article {
+    flex-direction: row;
+  }
+  #help article ul li p {
+    padding: 3rem;
+  }
+  #help .firstUl {
+    margin-right: 2.5%;
+  }
+  .donateCategory {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+  .donateCategory div {
+    width: 45%;
+  }
+  .donateCategory div a {
+    padding: 0.75rem 78% 0.75rem 5%;
+  }
+  #volunteer div img, #store div img {
+    height: 18rem;
+  }
+  #volunteer .redirect, #store .redirect {
+    width: 20%;
+  }
+  #volunteer .redirect a, #store .redirect a {
+    padding: 1.5rem 2%;
+    width: 100%;
+    display: block;
+  }
+  #volunteer .redirectToStore, #store .redirectToStore {
+    font-size: 1.7rem;
+  }
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 2.6666rem auto;
+}
+.form #contactInfo {
+  color: #184AE4;
+  font-weight: 700;
+  margin-bottom: 2.6666rem;
+}
+.form #contactInfo h3 {
+  margin-bottom: 1.333rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.form #contactInfo p {
+  font-size: 0.8rem;
+  width: 100%;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.contactForm, .coords, .card {
+  border: 1.5px solid #184AE4;
+}
+.contactForm form div, .coords form div, .card form div {
+  position: relative;
+  width: 80%;
+}
+.contactForm form input, .contactForm form textarea, .contactForm form select, .coords form input, .coords form textarea, .coords form select, .card form input, .card form textarea, .card form select {
+  margin: auto;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid black;
+  width: 100%;
+  padding: 0.7rem 5%;
+  color: #184AE4;
+}
+.contactForm form label, .coords form label, .card form label {
+  position: absolute;
+  top: -0.5rem;
+  left: 10%;
+  background-color: white;
+  padding: 0 3%;
+  color: #184AE4;
+  font-weight: 700;
+}
+.contactForm form #newsletter, .contactForm form #accommodationResponse, .contactForm form #emergency, .coords form #newsletter, .coords form #accommodationResponse, .coords form #emergency, .card form #newsletter, .card form #accommodationResponse, .card form #emergency {
+  width: 5%;
+  margin-top: 1rem;
+}
+.contactForm #button, .coords #button, .card #button {
+  text-align: center;
+  margin-bottom: 1.333rem;
+}
+.contactForm #button button, .coords #button button, .card #button button {
+  background-color: #184AE4;
+  border: 1px solid #184AE4;
+  color: white;
+  border-radius: 25px;
+  padding: 0.6rem 10%;
+  cursor: pointer;
+}
+
+.contactForm {
+  border-radius: 50px;
+}
+
+form div {
+  margin: 1.3333rem auto 2.6666rem;
+}
+
+@media (min-width: 1000px) {
+  .form {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .form .contactForm {
+    width: 40%;
+  }
+  .form #contactInfo {
+    width: 40%;
+  }
+  .form #newsletter, .form #emergency, .form #accommodationResponse {
+    margin-top: 5rem;
+  }
+}
+.donateForm {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 2.6666rem auto;
+}
+.donateForm .rising form {
+  margin-bottom: 1.3333rem;
+  border: 1.5px solid #184AE4;
+  border-radius: 20px;
+}
+.donateForm .rising .category {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0.75rem auto;
+  width: 100%;
+}
+.donateForm input[type=radio], .donateForm input[type=checkbox] {
+  display: none;
+}
+.donateForm .radio {
+  color: #184AE4;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  border: 1.5px solid black;
+  padding: 1em 2em;
+  border-radius: 0.5em;
+}
+.donateForm input[type=radio]:checked + label {
+  background-color: #184AE4;
+  color: #ffffff;
+  font-weight: 700;
+}
+.donateForm .rise {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1.3333rem 0;
+}
+.donateForm .rise label {
+  border: 1.5px solid black;
+  padding: 1em 2em;
+  color: #184AE4;
+  border-radius: 10px;
+}
+.donateForm .rise input[type=checkbox]:checked + label {
+  background-color: #184AE4;
+  color: #ffffff;
+  font-weight: 700;
+}
+.donateForm .otherRise_container {
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+.donateForm #otherRise {
+  margin: auto;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid black;
+  width: 80%;
+  padding: 0.7rem 5%;
+  color: #184AE4;
+}
+
+.coords, .card {
+  border-radius: 20px;
+  margin-bottom: 1.3333rem;
+}
+
+.last_coords_input {
+  margin-bottom: 0.75rem;
+}
+
+.moneyButton {
+  text-align: center;
+  margin-bottom: 1.333rem;
+}
+.moneyButton button {
+  background-color: #184AE4;
+  border: 1px solid #184AE4;
+  color: white;
+  border-radius: 25px;
+  padding: 0.6rem 10%;
+  cursor: pointer;
+}
+
+@media (min-width: 1000px) {
+  .donateForm div {
+    justify-content: space-between;
+    display: flex;
+  }
+  .donateForm div article {
+    width: 30%;
+  }
+  .donateForm div article .rise {
+    margin-bottom: 2.6666rem;
+  }
+  .donateForm div .rising .category {
+    margin-bottom: 2.6666rem;
+  }
+  .donateForm .moneyButton {
+    margin-top: 3rem;
+  }
+  .donateForm .moneyButton button {
+    font-size: 1.5rem;
+    padding: 1rem 8%;
+  }
+}
+#gallery article {
+  width: 80%;
+  margin: auto;
+}
+#gallery article img {
+  display: block;
+  max-width: 100%;
+}
+#gallery article .wrapper {
+  overflow: hidden;
+  height: 10rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 1rem;
+}
+#gallery article .gallery {
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+}
+#gallery article .gallery__img {
+  scroll-snap-align: start;
+  margin-bottom: 1rem;
+  min-height: 5rem;
+  object-fit: cover;
+}
+#gallery article .lil-nav {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+#gallery article .lil-nav a {
+  display: flex;
+  margin-bottom: 2rem;
+}
+#gallery article .lil-nav .last {
+  margin-bottom: 0;
+}
+#gallery article .lil-nav__img {
+  object-fit: cover;
+  max-height: 3rem;
+}
+
+@media (min-width: 1000px) {
+  #gallery article {
+    margin-left: 20%;
+  }
+  #gallery article .wrapper {
+    height: 55vh;
+    width: 70%;
+  }
+  #gallery article .gallery__img {
+    margin-bottom: 3rem;
+  }
+}
+#projects div {
+  display: flex;
+  overflow: scroll;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+#projects div article {
+  border: 1.5px solid #184AE4;
+  text-align: center;
+  width: 40%;
+  border-radius: 15px;
+  margin-right: 10%;
+  flex: none;
+}
+#projects div article h3 {
+  font-weight: 700;
+  margin: 0.75rem auto;
+}
+#projects div article img {
+  margin-bottom: 1.3333rem;
+  width: 80%;
+  height: 4rem;
+}
+#projects div article p {
+  width: 90%;
+  margin: 1.333rem auto 0.75rem;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 1000px) {
+  #projects div article {
+    width: 20%;
+    margin-right: 20%;
+    border: 2px solid #184AE4;
+  }
+  #projects div article h3 {
+    margin: 2rem auto;
+  }
+  #projects div article p {
+    margin-bottom: 2rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

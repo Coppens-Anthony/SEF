@@ -1,0 +1,33 @@
+#missions {
+  p {
+    width: 60%;
+    margin-bottom: 1.3333rem;
+  }
+
+  img {
+    width: 70%;
+    height: 12rem;
+    margin: auto 15%;
+    border-radius: 15px;
+  }
+}
+
+@media (min-width: 1000px) {
+  #missions {
+    div{
+      margin: auto;
+      display: flex;
+      align-items: center;
+      width: 80%;
+    }
+    p {
+      width: 50%;
+      margin: 0 10% 0 0;
+    }
+    img{
+      width: 70%;
+      height: 15rem;
+      margin: auto;
+    }
+  }
+}

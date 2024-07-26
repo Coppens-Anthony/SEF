@@ -1,0 +1,55 @@
+html {
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+body {
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  font-family: Raleway, Roboto, Montserrat, sans-serif;
+  overflow-x: hidden;
+}
+.main{
+  color: #184AE4;
+  font-weight: 700;
+}
+.underline{
+  text-decoration: underline;
+}
+.blue{
+  color: #184AE4;
+}
+.red{
+  color: #FF0000;
+}
+p{
+  margin: auto;
+
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important; /* 2 */
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important; /* 3 */
+}
+
+abbr {
+  text-decoration: none;
+}

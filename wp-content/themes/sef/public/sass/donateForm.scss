@@ -1,0 +1,123 @@
+.donateForm {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 2.6666rem auto;
+
+  .rising {
+    form {
+      margin-bottom: 1.3333rem;
+      border: 1.5px solid #184AE4;
+      border-radius: 20px;
+    }
+
+    .category {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 0.75rem auto;
+      width: 100%;
+    }
+  }
+
+  input[type="radio"], input[type='checkbox'] {
+    display: none;
+  }
+
+  .radio {
+    color: #184AE4;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    border: 1.5px solid black;
+    padding: 1em 2em;
+    border-radius: 0.5em;
+  }
+
+  input[type="radio"]:checked + label {
+    background-color: #184AE4;
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  .rise {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.3333rem 0;
+
+    label {
+      border: 1.5px solid black;
+      padding: 1em 2em;
+      color: #184AE4;
+      border-radius: 10px;
+    }
+
+    input[type="checkbox"]:checked + label {
+      background-color: #184AE4;
+      color: #ffffff;
+      font-weight: 700;
+    }
+  }
+
+  .otherRise_container {
+    text-align: center;
+    margin-bottom: 0.75rem;
+  }
+
+  #otherRise {
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid black;
+    width: 80%;
+    padding: 0.7rem 5%;
+    color: #184AE4;
+  }
+}
+
+.coords, .card {
+  border-radius: 20px;
+  margin-bottom: 1.3333rem;
+}
+.last_coords_input{
+  margin-bottom: 0.75rem;
+}
+
+.moneyButton {
+  text-align: center;
+  margin-bottom: 1.333rem;
+  button {
+    background-color: #184AE4;
+    border: 1px solid #184AE4;
+    color: white;
+    border-radius: 25px;
+    padding: 0.6rem 10%;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1000px) {
+  .donateForm{
+    div{
+      justify-content: space-between;
+      display: flex;
+      article{
+        width: 30%;
+        .rise{
+            margin-bottom: 2.6666rem;
+        }
+      }
+      .rising{
+        .category{
+          margin-bottom: 2.6666rem
+        }
+      }
+    }
+    .moneyButton{
+      margin-top: 3rem;
+      button{
+        font-size: 1.5rem;
+        padding: 1rem 8%;
+      }
+    }
+  }
+}

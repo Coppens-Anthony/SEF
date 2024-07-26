@@ -1,0 +1,43 @@
+#staff {
+  ul {
+    display: flex;
+    overflow: scroll;
+
+    li {
+      margin-left: 11%;
+      margin-right: 25%;
+
+      .staffPicture {
+        width: 150%;
+        height: 12rem;
+      }
+
+      figcaption {
+        margin-top: 0.75rem;
+        display: block;
+        white-space: normal;
+        width: 150%;
+        text-align: center;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  #staff {
+    ul {
+      width: 80%;
+      margin: auto;
+      li {
+        margin-left: 5%;
+        .staffPicture {
+          width: 200%;
+        }
+        figcaption{
+          width: 200%;
+        }
+      }
+    }
+  }
+}

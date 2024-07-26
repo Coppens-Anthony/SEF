@@ -1,0 +1,53 @@
+Modification :
+
+Page d'accueil /= page SEF => Donner envie aux gens.
+
+Supprimer TEMOIGNAGES, FORM TEMOIGNAGE, ADRESSE DES MAISONS, FORM HEBERGEMENT (=> Contact) 
+
+MODIF LOGO
+
+													MODIF Titres : Plus gros et sur 2 lignes par exemple 
+
+Map dans contact ou magasins
+
+Histoire a la fin
+Case histoire : enlever bordure et ajouter petit triangle pour raccorder à la ligne
+
+														Changer galerie (4-5 photos du Facebook)
+
+										Slider horizontaux => Slider au clic ou sur la mm page (espece de grille)
+
+Photos => object fit
+
+Hover => distinguer le survol
+
+Interligne
+
+Choses plus osés => post it dans soutien
+
+Remplassez les projets par des actualités.
+
+padding-top et padding-bottom de 1 à la place de 2 sur le nav
+
+Images des maisons en width 100% et height 100% => retravailler les informations à côté
+
+
+
+PAGE ACCUEIL : 
+- Intro 
+- Actualités
+- Transition (section qui prend la largeur de la page avec avec cta pour les dons et contact accompagné d'un message de soutien)
+- FAQ
+
+PAGE SEF :
+- Missions
+- Galerie
+- Equipe
+- Histoire
+
+PAGE MAGASINS :
+- Présentation des 3
+- Tableau d'horaires
+
+PAGE HEBERGEMENTS : 
+- Présentations des 3 

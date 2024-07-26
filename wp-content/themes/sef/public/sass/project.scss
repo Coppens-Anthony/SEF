@@ -1,0 +1,52 @@
+#projects {
+  div {
+    display: flex;
+    overflow: scroll;
+    margin-left: 10%;
+    margin-right: 10%;
+
+
+    article {
+      border: 1.5px solid #184AE4;
+      text-align: center;
+      width: 40%;
+      border-radius: 15px;
+      margin-right: 10%;
+      flex: none;
+
+      h3{
+        font-weight: 700;
+        margin: 0.75rem auto;
+      }
+      img{
+        margin-bottom: 1.3333rem;
+        width: 80%;
+        height: 4rem;
+      }
+      p{
+        width: 90%;
+        margin: 1.333rem auto 0.75rem;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  #projects{
+    div{
+      article{
+        width: 20%;
+        margin-right: 20%;
+        border: 2px solid #184AE4;
+
+        h3{
+          margin: 2rem auto;
+        }
+        p{
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+}

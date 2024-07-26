@@ -1,0 +1,60 @@
+#faq{
+  .toContactForm{
+    color: white;
+    background-color: #184AE4;
+    display: block;
+    width: 35%;
+    padding: 1.5%;
+    text-align: center;
+    border-radius: 15px;
+    margin-left: 55%;
+    margin-top: -2.6666rem;
+  }
+  div{
+    margin: 2.666666666rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+    border: 1.5px solid #184AE4;
+    padding: 2%;
+    position: relative;
+    label{
+      font-size: 0.8rem;
+      cursor: pointer;
+      padding: 0.2rem 2%;
+      width: 100%;
+      display: block;
+      text-align: center;
+    }
+    input{
+      display: none;
+    }
+    :checked ~ .responses{
+      display: block;
+    }
+    .responses{
+      display: none;
+      font-size: 0.6rem;
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  #faq{
+      .toContactForm{
+        width: 20%;
+        margin-left: 70%;
+      }
+    div{
+      margin: 3rem auto;
+      padding: 0;
+      width: 80%;
+      label{
+        padding: 1.5rem 0;
+      }
+      .responses{
+        text-align: center;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
