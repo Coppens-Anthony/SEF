@@ -193,7 +193,7 @@
                     <label for="newsletter">Je souhaite m&apos;abonner &agrave; la newsletter pour recevoir les derni&egrave;res nouvelles et mises &agrave; jour.</label>
                 </div>
                 <div id="button">
-                    <button type="submit">Envoyer</button>
+                    <button type="submit" title="Soumettre vos donn&eacute;es">Envoyer</button>
                 </div>
             </form>
         </article>
