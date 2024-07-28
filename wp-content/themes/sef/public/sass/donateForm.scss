@@ -92,6 +92,12 @@
     border-radius: 25px;
     padding: 0.6rem 10%;
     cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+      background-color: white;
+      color: #184AE4;
+      transition: 0.5s;
+    }
   }
 }
 

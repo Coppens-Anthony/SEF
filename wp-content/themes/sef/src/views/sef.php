@@ -196,105 +196,239 @@
 
     </section>
     <section class="sections" id="staff">
-        <h2>Notre &eacute;quipe</h2>
-        <ul>
-            <li class="firstEmployee">
-                <figure>
-                    <img alt="Photo d&apos;Anne-Sophie Portier"
-                         src="/wp-content/themes/sef/src/img/staff/Anne-Sophie.jpg" height="318" width="423"
-                         class="staffPicture"/>
-                    <figcaption>Anne-Sophie Portier (engag&eacute;e depuis 14 ans)</figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure>
-                    <img id="Virigine" alt="Photo de Virginie Dozot"
-                         src="/wp-content/themes/sef/src/img/staff/Virginie.jpg" height="320"
-                         width="427" class="staffPicture"/>
-                    <figcaption>Virginie Dozot (engag&eacute;e depuis 22 ans)</figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure>
-                    <img alt="Photo de Pauline Pirson" src="/wp-content/themes/sef/src/img/staff/pauline.jpg"
-                         height="317"
-                         width="422" class="staffPicture"/>
-                    <figcaption>Pauline Royer (engag&eacute;e depuis 3 ans)</figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure>
-                    <img alt="Photo d&apos;Audrey Pirson" src="/wp-content/themes/sef/src/img/staff/audrey_p.jpg"
-                         height="316"
-                         width="421" class="staffPicture"/>
-                    <figcaption>Audrey Pirson (engag&eacute;e depuis 13 ans)</figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure>
-                    <img alt="Photo de Pascale Jongen" src="/wp-content/themes/sef/src/img/staff/pascale_j.jpg"
-                         height="317"
-                         width="423" class="staffPicture"/>
-                    <figcaption>Pascale Jongen (engag&eacute;e depuis 30 ans)</figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure>
-                    <img alt="Photo d&apos;Ang&eacute;lique Marlet"
-                         src="/wp-content/themes/sef/src/img/staff/angelique.jpg" height="317"
-                         width="423" class="staffPicture"/>
-                    <figcaption>Ang&eacute;lique Marlet (stagiaire AS fin 2023)</figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure>
-                    <img alt="Photo de Julie Migeot" src="/wp-content/themes/sef/src/img/staff/julie.jpg" height="319"
-                         width="425" class="staffPicture"/>
-                    <figcaption>Julie Migeot (stagiaire psycho 2023/24)</figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure>
-                    <img alt="Photo de Pascale Douillet" src="/wp-content/themes/sef/src/img/staff/pascale_d.jpg"
-                         height="309"
-                         width="413" class="staffPicture"/>
-                    <figcaption>Pascale Douillet (engag&eacute; depuis 4 ans)</figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure>
-                    <img alt="Photo de Fabian Dendievel" src="/wp-content/themes/sef/src/img/staff/fabian.jpg"
-                         height="311"
-                         width="416" class="staffPicture"/>
-                    <figcaption>Fabian Dendievel (engag&eacute; depuis 4 mois, en remplacement de Nicolas Robaye)
-                    </figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure>
-                    <img alt="Photo de Nicolas Adans" src="/wp-content/themes/sef/src/img/staff/nicolas.jpg"
-                         height="434"
-                         width="325" class="staffPicture"/>
-                    <figcaption>Nicolas Adans (engag&eacute; depuis 6 mois)</figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure>
-                    <img alt="Photo d&apos;Audrey Collinet" src="/wp-content/themes/sef/src/img/staff/audrey_c.jpg"
-                         height="324"
-                         width="433" class="staffPicture"/>
-                    <figcaption>Audrey Collinet (engag&eacute;e depuis 1 an et demi)</figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure>
-                    <img alt="Photo de B&eacute;atrice de Lamotte"
-                         src="/wp-content/themes/sef/src/img/staff/beatrice.jpg" height="436"
-                         width="327" class="staffPicture"/>
-                    <figcaption>B&eacute;atrice de Lamotte (nouvellement engag&eacute;e)</figcaption>
-                </figure>
-            </li>
-        </ul>
+        <h2>Notre fabuleuse &eacute;quipe</h2>
+        <div class="slider-wrapper">
+            <div class="staff-mobile">
+                <ul class="slider">
+                    <li id="a">
+                        <div>
+                            <img alt="Photo d&apos;Anne-Sophie Portier"
+                                 src="/wp-content/themes/sef/src/img/staff/anne-sophie.png"
+                                 class="staffPicture"/>
+                            <p class="staff-name">Anne-Sophie Portier</p>
+                            <p>
+                                Engag&eacute;e depuis 14 ans
+                            </p>
+                        </div>
+                        <div>
+                            <img id="Virigine" alt="Photo de Virginie Dozot"
+                                 src="/wp-content/themes/sef/src/img/staff/virginie.png" class="staffPicture"/>
+                            <p class="staff-name">Virginie Dozot</p>
+                            <p>Engag&eacute;e depuis 22 ans</p>
+                        </div>
+                    </li>
+                    <li id="b">
+                        <div>
+                            <img alt="Photo de Pauline Royer"
+                                 src="/wp-content/themes/sef/src/img/staff/pauline.png"
+                                 class="staffPicture"/>
+                            <p class="staff-name">Pauline Royer</p>
+                            <p>
+
+                                Engag&eacute;e depuis 3 ans
+                            </p>
+                        </div>
+                        <div>
+                            <img id="Virigine" alt="Photo d&apos;Audrey Pirson"
+                                 src="/wp-content/themes/sef/src/img/staff/audrey_p.png" class="staffPicture"/>
+                            <p class="staff-name">Audrey Pirson</p>
+                            <p>Engag&eacute;e depuis 13 ans</p>
+                        </div>
+                    </li>
+                    <li id="c">
+                        <div>
+                            <img alt="Photo de Pascale Jongen"
+                                 src="/wp-content/themes/sef/src/img/staff/pascale_j.png"
+                                 class="staffPicture"/>
+                            <p class="staff-name">Pascale Jongen</p>
+                            <p>
+
+                                Engag&eacute;e depuis 30 ans
+                            </p>
+                        </div>
+                        <div>
+                            <img id="Virigine" alt="Photo d&apos;Ang&eacute;lique Marlet"
+                                 src="/wp-content/themes/sef/src/img/staff/angelique.png" class="staffPicture"/>
+                            <p class="staff-name">Ang&eacute;lique Marlet</p>
+                            <p>stagiaire AS fin 2023</p>
+                        </div>
+                    </li>
+                    <li id="d">
+                        <div>
+                            <img alt="Photo de Julie Migeot"
+                                 src="/wp-content/themes/sef/src/img/staff/julie.png"
+                                 class="staffPicture"/>
+                            <p class="staff-name">Julie Migeot</p>
+                            <p>
+                                stagiaire psycho 2023/24
+                            </p>
+                        </div>
+                        <div>
+                            <img id="Virigine" alt="Photo de Pascale Douillet"
+                                 src="/wp-content/themes/sef/src/img/staff/pascale_d.png" class="staffPicture"/>
+                            <p class="staff-name">Pascale Douillet</p>
+                            <p>Engag&eacute;e depuis 4 ans</p>
+                        </div>
+                    </li>
+                    <li id="e">
+                        <div>
+                            <img alt="Photo de Fabian Dendievel"
+                                 src="/wp-content/themes/sef/src/img/staff/fabian.png"
+                                 class="staffPicture"/>
+                            <p class="staff-name">Fabian Dendievel</p>
+                            <p>
+
+                                Engag&eacute;e depuis 4 mois
+                            </p>
+                        </div>
+                        <div>
+                            <img id="Virigine" alt="Photo de Nicolas Adans"
+                                 src="/wp-content/themes/sef/src/img/staff/nicolas.png" class="staffPicture"/>
+                            <p class="staff-name">Nicolas Adans</p>
+                            <p>Engag&eacute;e depuis 6 mois</p>
+                        </div>
+                    </li>
+                    <li id="f">
+                        <div>
+                            <img alt="Photo d&apos;Audrey Collinet"
+                                 src="/wp-content/themes/sef/src/img/staff/audrey_c.png"
+                                 class="staffPicture"/>
+                            <p class="staff-name">Audrey Collinet</p>
+                            <p>
+
+                                Engag&eacute;e depuis 1 an et demi
+                            </p>
+                        </div>
+                        <div>
+                            <img id="Virigine" alt="Photo de B&eacute;atrice de Lamotte"
+                                 src="/wp-content/themes/sef/src/img/staff/beatrice.png" class="staffPicture"/>
+                            <p class="staff-name">B&eacute;atrice de Lamotte</p>
+                            <p>Nouvellement engag&eacute;e</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="slider-nav">
+                    <a href="#a" title="Duo 1"></a>
+                    <a href="#b" title="Duo 2"></a>
+                    <a href="#c" title="Duo 3"></a>
+                    <a href="#d" title="Duo 4"></a>
+                    <a href="#e" title="Duo 5"></a>
+                    <a href="#f" title="Duo 6"></a>
+                </div>
+            </div>
+            <div class="staff-desktop">
+                <ul class="slider">
+                    <li id="desktop-a">
+                        <div>
+                            <img alt="Photo d&apos;Anne-Sophie Portier"
+                                 src="/wp-content/themes/sef/src/img/staff/anne-sophie.png"
+                                 class="staffPicture"/>
+                            <p class="staff-name">Anne-Sophie Portier</p>
+                            <p>
+                                Engag&eacute;e depuis 14 ans
+                            </p>
+                        </div>
+                        <div>
+                            <img id="Virigine" alt="Photo de Virginie Dozot"
+                                 src="/wp-content/themes/sef/src/img/staff/virginie.png" class="staffPicture"/>
+                            <p class="staff-name">Virginie Dozot</p>
+                            <p>Engag&eacute;e depuis 22 ans</p>
+                        </div>
+                        <div>
+                            <img alt="Photo de Pauline Royer"
+                                 src="/wp-content/themes/sef/src/img/staff/pauline.png"
+                                 class="staffPicture"/>
+                            <p class="staff-name">Pauline Royer</p>
+                            <p>
+
+                                Engag&eacute;e depuis 3 ans
+                            </p>
+                        </div>
+                    </li>
+                    <li id="desktop-b">
+                        <div>
+                            <img id="Virigine" alt="Photo d&apos;Audrey Pirson"
+                                 src="/wp-content/themes/sef/src/img/staff/audrey_p.png" class="staffPicture"/>
+                            <p class="staff-name">Audrey Pirson</p>
+                            <p>Engag&eacute;e depuis 13 ans</p>
+                        </div>
+                        <div>
+                            <img alt="Photo de Pascale Jongen"
+                                 src="/wp-content/themes/sef/src/img/staff/pascale_j.png"
+                                 class="staffPicture"/>
+                            <p class="staff-name">Pascale Jongen</p>
+                            <p>
+
+                                Engag&eacute;e depuis 30 ans
+                            </p>
+                        </div>
+                        <div>
+                            <img id="Virigine" alt="Photo d&apos;Ang&eacute;lique Marlet"
+                                 src="/wp-content/themes/sef/src/img/staff/angelique.png" class="staffPicture"/>
+                            <p class="staff-name">Ang&eacute;lique Marlet</p>
+                            <p>stagiaire AS fin 2023</p>
+                        </div>
+                    </li>
+                    <li id="desktop-c">
+                        <div>
+                            <img alt="Photo de Julie Migeot"
+                                 src="/wp-content/themes/sef/src/img/staff/julie.png"
+                                 class="staffPicture"/>
+                            <p class="staff-name">Julie Migeot</p>
+                            <p>
+                                stagiaire psycho 2023/24
+                            </p>
+                        </div>
+                        <div>
+                            <img id="Virigine" alt="Photo de Pascale Douillet"
+                                 src="/wp-content/themes/sef/src/img/staff/pascale_d.png" class="staffPicture"/>
+                            <p class="staff-name">Pascale Douillet</p>
+                            <p>Engag&eacute;e depuis 4 ans</p>
+                        </div>
+                        <div>
+                            <img alt="Photo de Fabian Dendievel"
+                                 src="/wp-content/themes/sef/src/img/staff/fabian.png"
+                                 class="staffPicture"/>
+                            <p class="staff-name">Fabian Dendievel</p>
+                            <p>
+
+                                Engag&eacute;e depuis 4 mois
+                            </p>
+                        </div>
+                    </li>
+                    <li id="desktop-d">
+                        <div>
+                            <img id="Virigine" alt="Photo de Nicolas Adans"
+                                 src="/wp-content/themes/sef/src/img/staff/nicolas.png" class="staffPicture"/>
+                            <p class="staff-name">Nicolas Adans</p>
+                            <p>Engag&eacute;e depuis 6 mois</p>
+                        </div>
+                        <div>
+                            <img alt="Photo d&apos;Audrey Collinet"
+                                 src="/wp-content/themes/sef/src/img/staff/audrey_c.png"
+                                 class="staffPicture"/>
+                            <p class="staff-name">Audrey Collinet</p>
+                            <p>
+
+                                Engag&eacute;e depuis 1 an et demi
+                            </p>
+                        </div>
+                        <div>
+                            <img id="Virigine" alt="Photo de B&eacute;atrice de Lamotte"
+                                 src="/wp-content/themes/sef/src/img/staff/beatrice.png" class="staffPicture"/>
+                            <p class="staff-name">B&eacute;atrice de Lamotte</p>
+                            <p>Nouvellement engag&eacute;e</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="slider-nav">
+                    <a href="#desktop-a" title="Duo 1"></a>
+                    <a href="#desktop-b" title="Duo 2"></a>
+                    <a href="#desktop-c" title="Duo 3"></a>
+                    <a href="#desktop-d" title="Duo 4"></a>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="sections" id="history">
         <h2>L&apos;histoire du SEF</h2>
