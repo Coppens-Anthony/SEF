@@ -61,17 +61,17 @@
             </svg>
         </a>
         <h2 class="sr-only">Navigation Principale</h2>
-        <a href="donate.php" id="donateMobile" title="Vers la page de soutien">SOUTENIR</a>
+        <a href="../donate.php" id="donateMobile" title="Vers la page de soutien">SOUTENIR</a>
         <label for="burgerMenu">☰</label>
         <input type="checkbox" id="burgerMenu" name="burgerMenu">
         <nav id="burgerNav">
             <h3 class="sr-only">Burger Menu Navigation</h3>
             <ul>
                 <li>
-                    <a href="/" title="Vers la page SEF">SEF</a>
+                    <a href="/" title="Vers la page d&apos;accueil">Accueil</a>
                 </li>
                 <li>
-                    <a href="../projects.php" title="Vers la page des projets">Projets</a>
+                    <a href="../sef.php" title="Vers la page SEF">SEF</a>
                 </li>
                 <li>
                     <a href="../stores.php" title="Vers la page des magasins">Magasins</a>
@@ -135,10 +135,10 @@
         <h2 class="sr-only">Navigation pour oridnateur</h2>
         <ul>
             <li>
-                <a href="/" title="Vers la page SEF">SEF</a>
+                <a href="/" title="Vers la page d&apos;accueil">Accueil</a>
             </li>
             <li>
-                <a href="../projects.php" title="Vers la page des projets">Projets</a>
+                <a href="../sef.php" title="Vers la page SEF">SEF</a>
             </li>
             <li>
                 <a href="../stores.php" title="Vers la page des magasins">Magasins</a>
@@ -173,10 +173,10 @@
             <h3>Navigation</h3>
             <ul>
                 <li>
-                    <a href="/" title="Vers la page SEF">SEF</a>
+                    <a href="/" title="Vers la page d&apos;accueil">Accueil</a>
                 </li>
                 <li>
-                    <a href="/wp-content/themes/sef/src/views/projects.php" title="Vers la page des projets">Projets</a>
+                    <a href="/wp-content/themes/sef/src/views/sef.php" title="Vers la page SEF">SEF</a>
                 </li>
                 <li>
                     <a href="/wp-content/themes/sef/src/views/stores.php" title="Vers la page des magasins">Magasins</a>
