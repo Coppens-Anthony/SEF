@@ -218,6 +218,7 @@ header .onlyScreen #donateScreen a {
 .intro p {
   width: 60%;
   margin-bottom: 2.6666666rem;
+  font-size: 0.8rem;
 }
 .intro b {
   font-weight: 700;
@@ -257,6 +258,7 @@ header .onlyScreen #donateScreen a {
   font-weight: 700;
   margin: 0 auto 2.6666666rem;
   font-family: Georgia, "Times New Roman", Times, serif;
+  width: 80%;
 }
 
 @media (min-width: 1000px) {
@@ -305,16 +307,27 @@ header .onlyScreen #donateScreen a {
   text-align: center;
   position: relative;
   padding: 1.2rem 5%;
-  border: 1.5px solid #184ae4;
-  box-shadow: 0 0 10px 0 rgba(24, 78, 228, 0.4);
+  box-shadow: 0 0 20px 0 rgba(24, 78, 228, 0.4);
 }
 .text-box h4 {
   font-weight: 700;
   margin-bottom: 1rem;
   font-size: 0.8rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .text-box p {
   font-size: 0.6rem;
+}
+.text-box .left-container-arrow, .text-box .right-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 35%;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid white;
+  right: 100%;
 }
 
 .last_timeline_container {
@@ -346,19 +359,59 @@ header .onlyScreen #donateScreen a {
   .timeline .rightBox {
     margin-left: 55%;
   }
+  .right-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    bottom: 3rem;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid white;
+    right: 100%;
+  }
+  .left-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid white;
+    left: 100%;
+  }
+}
+#missions {
+  margin-top: 4rem;
+  text-align: left;
+}
+#missions h2 {
+  margin-bottom: 0;
+  font-weight: 400;
+  margin-left: 20%;
 }
 #missions p {
   width: 60%;
   margin-bottom: 1.3333rem;
+  text-align: left;
+  font-size: 0.8rem;
 }
 #missions img {
   width: 70%;
   height: 12rem;
   margin: auto 15%;
   border-radius: 15px;
+  object-fit: cover;
 }
 
 @media (min-width: 1000px) {
+  #missions {
+    margin-top: 6rem;
+  }
+  #missions h2 {
+    margin-left: 10%;
+  }
   #missions div {
     margin: auto;
     display: flex;
@@ -366,6 +419,7 @@ header .onlyScreen #donateScreen a {
     width: 80%;
   }
   #missions p {
+    text-align: left;
     width: 50%;
     margin: 0 10% 0 0;
   }
@@ -411,60 +465,70 @@ header .onlyScreen #donateScreen a {
     width: 200%;
   }
 }
-#faq .toContactForm {
-  color: white;
-  background-color: #184AE4;
-  display: block;
-  width: 35%;
-  padding: 1.5%;
-  text-align: center;
-  border-radius: 15px;
-  margin-left: 55%;
-  margin-top: -2.6666rem;
+#faq {
+  width: 80%;
+  margin: auto auto 2.6666rem;
 }
-#faq div {
-  margin: 2.666666666rem;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  border: 1.5px solid #184AE4;
-  padding: 2%;
+#faq .faq-container div {
+  margin: 0 auto;
+  border-bottom: 1px solid #184AE4;
   position: relative;
 }
-#faq div label {
+#faq .faq-container div label {
   font-size: 0.8rem;
   cursor: pointer;
-  padding: 0.2rem 2%;
+  padding: 1rem 0;
+  display: block;
+  text-align: left;
   width: 100%;
-  display: block;
-  text-align: center;
 }
-#faq div input {
+#faq .faq-container div label:after {
+  content: "^";
+  color: #184AE4;
+  font-size: 1rem;
+  font-weight: 500;
+  position: absolute;
+  top: 30%;
+  right: 0;
+  rotate: 180deg;
+}
+#faq .faq-container div input {
   display: none;
 }
-#faq div :checked ~ .responses {
+#faq .faq-container div :checked ~ .responses {
   display: block;
 }
-#faq div .responses {
+#faq .faq-container div .responses {
   display: none;
-  font-size: 0.6rem;
+  text-align: left;
+  font-size: 0.7rem;
   margin-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 @media (min-width: 1000px) {
-  #faq .toContactForm {
-    width: 20%;
-    margin-left: 70%;
+  #faq {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4.6666rem;
   }
-  #faq div {
-    margin: 3rem auto;
-    padding: 0;
+  #faq h2 {
+    margin-left: 0;
+    width: 40%;
+  }
+  #faq .faq-container {
+    width: 50%;
+  }
+  #faq .faq-container div {
     width: 80%;
   }
-  #faq div label {
+  #faq .faq-container div label {
     padding: 1.5rem 0;
   }
-  #faq div .responses {
+  #faq .faq-container div .responses {
     text-align: center;
     margin-bottom: 0.5rem;
+    font-size: 0.8rem;
   }
 }
 footer {
@@ -1123,46 +1187,51 @@ form div {
     margin-bottom: 3rem;
   }
 }
-#projects div {
-  display: flex;
-  overflow: scroll;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-#projects div article {
-  border: 1.5px solid #184AE4;
+.transition {
+  background-color: #184AE4;
+  color: white;
   text-align: center;
-  width: 40%;
-  border-radius: 15px;
-  margin-right: 10%;
-  flex: none;
+  padding: 2.6666rem 0 1.3333rem;
+  margin-bottom: 4.6666rem;
 }
-#projects div article h3 {
-  font-weight: 700;
-  margin: 0.75rem auto;
-}
-#projects div article img {
-  margin-bottom: 1.3333rem;
-  width: 80%;
-  height: 4rem;
-}
-#projects div article p {
+.transition h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.3rem;
   width: 90%;
-  margin: 1.333rem auto 0.75rem;
-  font-size: 0.8rem;
+  margin: auto;
+  line-height: 1.5rem;
+}
+.transition ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.3333rem auto 0;
+  text-align: center;
+  width: 60%;
+}
+.transition ul .transition-button {
+  font-size: 1em;
+  background-color: black;
+  border-radius: 20px;
+  padding: 0.8rem;
+}
+.transition ul .transition-button a {
+  color: white;
+  padding: 0.7rem 0;
 }
 
 @media (min-width: 1000px) {
-  #projects div article {
+  .transition {
+    padding: 2.6666rem 0;
+    margin-bottom: 4.6666rem;
+  }
+  .transition h2 {
+    font-size: 1.3rem;
+    width: 55%;
+    line-height: 1.5rem;
+  }
+  .transition ul {
+    margin: 1.3333rem auto;
     width: 20%;
-    margin-right: 20%;
-    border: 2px solid #184AE4;
-  }
-  #projects div article h3 {
-    margin: 2rem auto;
-  }
-  #projects div article p {
-    margin-bottom: 2rem;
   }
 }
 

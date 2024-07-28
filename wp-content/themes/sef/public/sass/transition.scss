@@ -1,0 +1,52 @@
+.transition {
+  background-color: #184AE4;
+  color: white;
+  text-align: center;
+  padding: 2.6666rem 0 1.3333rem;
+  margin-bottom: 4.6666rem;
+
+  h2 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1.3rem;
+    width: 90%;
+    margin: auto;
+    line-height: 1.5rem;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.3333rem auto 0;
+    text-align: center;
+    width: 60%;
+    .transition-button {
+      font-size: 1em;
+      background-color: black;
+      border-radius: 20px;
+      padding: 0.8rem;
+
+      a {
+        color: white;
+        padding: 0.7rem 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .transition {
+    padding: 2.6666rem 0;
+    margin-bottom: 4.6666rem;
+
+    h2 {
+      font-size: 1.3rem;
+      width: 55%;
+      line-height: 1.5rem;
+    }
+
+    ul {
+      margin: 1.3333rem auto;
+      width: 20%;
+    }
+  }
+}

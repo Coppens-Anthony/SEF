@@ -35,17 +35,28 @@
   text-align: center;
   position: relative;
   padding: 1.2rem 5%;
-  border: 1.5px solid #184ae4;
-  box-shadow: 0 0 10px 0 rgba(24, 78, 228, 0.4);
+  box-shadow: 0 0 20px 0 rgba(24, 78, 228, 0.4);
 
   h4 {
     font-weight: 700;
     margin-bottom: 1rem;
     font-size: 0.8rem;
+    font-family: Georgia, "Times New Roman", Times, serif;
   }
 
   p {
     font-size: 0.6rem;
+  }
+  .left-container-arrow, .right-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 35%;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid white;
+    right: 100%;
   }
 }
 
@@ -83,5 +94,27 @@
     .rightBox {
       margin-left: 55%;
     }
+  }
+  .right-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    bottom: 3rem;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid white;
+    right: 100%;
+  }
+  .left-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid white;
+    left: 100%;
   }
 }
