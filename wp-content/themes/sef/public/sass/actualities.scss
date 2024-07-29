@@ -1,0 +1,58 @@
+#actualities {
+  width: 80%;
+  margin: auto;
+  article {
+    margin-bottom: 2.6666rem;
+
+    h3 {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-weight: 700;
+      padding: 1.3333rem 0;
+      text-align: center;
+    }
+  }
+
+  #mezzanine {
+    background-color: #736E6A;
+    img{
+      object-fit: cover;
+      width: 100%;
+    }
+
+    h3 {
+      color: white;
+    }
+  }
+
+  #walks {
+    background-color: #6488F7;
+    img{
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  #new-house {
+    background-color: #79B8E9;
+    img{
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  #renovation {
+    background-color: #B0C2F8;
+    img{
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  #moving {
+    background-color: #7991DA;
+    img{
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}

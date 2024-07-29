@@ -188,6 +188,42 @@
         </p>
         <img src="/wp-content/themes/sef/src/img/accueil.jpg" height="322" width="564" alt="Image contextuelle"/>
     </section>
+    <section id="actualities" class="sections">
+        <h2>Nos r&eacute;centes actualit&eacute;s</h2>
+        <ul>
+            <li>
+                <article id="mezzanine">
+                    <img src="/wp-content/themes/sef/src/img/actualities/mezzanine.png" alt="Photo d&apos;une mezzanine">
+                    <h3>Cr&eacute;ation d&apos;une mezzanine au d&eacute;p&ocirc;t</h3>
+                </article>
+            </li>
+            <li>
+                <article id="walks">
+                    <img src="/wp-content/themes/sef/src/img/actualities/walks.jpeg" alt="Photo d&apos;une marche">
+                    <h3>Marche de sensibilisation</h3>
+                </article>
+            </li>
+            <li>
+                <article id="new-house">
+                    <img src="/wp-content/themes/sef/src/img/actualities/newHouse.jpg" alt="Photo d&apos;un achat d&apos;une nouvelle maison">
+                    <h3>Achat d&apos;une nouvelle maison</h3>
+                </article>
+            </li>
+            <li>
+                <article id="renovation">
+                    <img src="/wp-content/themes/sef/src/img/actualities/renovation.png" alt="Photo d&apos;une r&eacute;novation de maison">
+                    <h3>R&eacute;novation des maisons</h3>
+                </article>
+            </li>
+            <li>
+                <article id="moving">
+                    <img src="/wp-content/themes/sef/src/img/actualities/moving.png" alt="Photo d&apos;un d&eacute;m&eacute;nagement">
+                    <h3>D&eacute;placement de la bouquinerie</h3>
+                </article>
+            </li>
+
+        </ul>
+    </section>
     <section class="transition">
         <h2>Votre soutien nous aide d'une manière qui est indescriptible.
             Vous changez des vies</h2>

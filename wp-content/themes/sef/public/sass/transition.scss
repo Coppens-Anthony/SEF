@@ -2,7 +2,7 @@
   background-color: #184AE4;
   color: white;
   text-align: center;
-  padding: 2.6666rem 0 1.3333rem;
+  padding: 2.6666rem 0;
   margin-bottom: 4.6666rem;
 
   h2 {
@@ -35,7 +35,7 @@
 
 @media (min-width: 1000px) {
   .transition {
-    padding: 2.6666rem 0;
+    padding: 2.6666rem 0 1.333rem;
     margin-bottom: 4.6666rem;
 
     h2 {
