@@ -1,6 +1,7 @@
 #actualities {
   width: 80%;
   margin: auto;
+
   article {
     margin-bottom: 2.6666rem;
 
@@ -12,9 +13,10 @@
     }
   }
 
-  #mezzanine {
+  #mezzanine article {
     background-color: #736E6A;
-    img{
+
+    img {
       object-fit: cover;
       width: 100%;
     }
@@ -24,35 +26,110 @@
     }
   }
 
-  #walks {
+  #walks article {
     background-color: #6488F7;
-    img{
+
+    img {
       object-fit: cover;
       width: 100%;
     }
   }
 
-  #new-house {
+  #new-house article {
     background-color: #79B8E9;
-    img{
+
+    img {
       object-fit: cover;
       width: 100%;
     }
   }
 
-  #renovation {
+  #renovation article {
     background-color: #B0C2F8;
-    img{
+
+    img {
       object-fit: cover;
       width: 100%;
     }
   }
 
-  #moving {
+  #moving article {
     background-color: #7991DA;
-    img{
+
+    img {
       object-fit: cover;
       width: 100%;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  #actualities {
+    h2{
+      margin-left: 0;
+    }
+    ul {
+      display: grid;
+      grid-template-columns: 31.2% 31.2% 31.2%;
+      grid-template-rows: 15.4rem 15.4rem;
+      grid-row-gap: 2rem;
+      grid-column-gap: 2rem;
+      margin: auto auto 4.6666rem;
+    }
+
+    #mezzanine {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+
+      article img {
+        height: 11.7rem;
+      }
+    }
+
+    #walks {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2;
+
+      article img {
+        height: 11.7rem;
+      }
+    }
+
+    #new-house {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+
+      article img {
+        height: 11.7rem;
+      }
+    }
+
+    #renovation {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+
+      article img {
+        height: 11.7rem;
+      }
+    }
+
+    #moving {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3;
+
+      article img {
+        height: 11.7rem;
+      }
     }
   }
 }

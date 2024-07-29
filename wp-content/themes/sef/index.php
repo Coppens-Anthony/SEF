@@ -191,32 +191,32 @@
     <section id="actualities" class="sections">
         <h2>Nos r&eacute;centes actualit&eacute;s</h2>
         <ul>
-            <li>
-                <article id="mezzanine">
-                    <img src="/wp-content/themes/sef/src/img/actualities/mezzanine.png" alt="Photo d&apos;une mezzanine">
+            <li id="mezzanine">
+                <article>
+                    <img src="/wp-content/themes/sef/src/img/actualities/mezzanine.jpg" alt="Photo d&apos;une mezzanine">
                     <h3>Cr&eacute;ation d&apos;une mezzanine au d&eacute;p&ocirc;t</h3>
                 </article>
             </li>
-            <li>
-                <article id="walks">
+            <li id="walks">
+                <article>
                     <img src="/wp-content/themes/sef/src/img/actualities/walks.jpeg" alt="Photo d&apos;une marche">
                     <h3>Marche de sensibilisation</h3>
                 </article>
             </li>
-            <li>
-                <article id="new-house">
+            <li id="new-house">
+                <article>
                     <img src="/wp-content/themes/sef/src/img/actualities/newHouse.jpg" alt="Photo d&apos;un achat d&apos;une nouvelle maison">
                     <h3>Achat d&apos;une nouvelle maison</h3>
                 </article>
             </li>
-            <li>
-                <article id="renovation">
+            <li id="renovation">
+                <article>
                     <img src="/wp-content/themes/sef/src/img/actualities/renovation.png" alt="Photo d&apos;une r&eacute;novation de maison">
                     <h3>R&eacute;novation des maisons</h3>
                 </article>
             </li>
-            <li>
-                <article id="moving">
+            <li id="moving">
+                <article>
                     <img src="/wp-content/themes/sef/src/img/actualities/moving.png" alt="Photo d&apos;un d&eacute;m&eacute;nagement">
                     <h3>D&eacute;placement de la bouquinerie</h3>
                 </article>
