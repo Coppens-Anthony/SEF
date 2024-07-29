@@ -1301,43 +1301,102 @@ form div {
   padding: 1.3333rem 0;
   text-align: center;
 }
-#actualities #mezzanine {
+#actualities #mezzanine article {
   background-color: #736E6A;
 }
-#actualities #mezzanine img {
+#actualities #mezzanine article img {
   object-fit: cover;
   width: 100%;
 }
-#actualities #mezzanine h3 {
+#actualities #mezzanine article h3 {
   color: white;
 }
-#actualities #walks {
+#actualities #walks article {
   background-color: #6488F7;
 }
-#actualities #walks img {
+#actualities #walks article img {
   object-fit: cover;
   width: 100%;
 }
-#actualities #new-house {
+#actualities #new-house article {
   background-color: #79B8E9;
 }
-#actualities #new-house img {
+#actualities #new-house article img {
   object-fit: cover;
   width: 100%;
 }
-#actualities #renovation {
+#actualities #renovation article {
   background-color: #B0C2F8;
 }
-#actualities #renovation img {
+#actualities #renovation article img {
   object-fit: cover;
   width: 100%;
 }
-#actualities #moving {
+#actualities #moving article {
   background-color: #7991DA;
 }
-#actualities #moving img {
+#actualities #moving article img {
   object-fit: cover;
   width: 100%;
+}
+
+@media (min-width: 1000px) {
+  #actualities h2 {
+    margin-left: 0;
+  }
+  #actualities ul {
+    display: grid;
+    grid-template-columns: 31.2% 31.2% 31.2%;
+    grid-template-rows: 15.4rem 15.4rem;
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
+    margin: auto auto 4.6666rem;
+  }
+  #actualities #mezzanine {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  #actualities #mezzanine article img {
+    height: 11.7rem;
+  }
+  #actualities #walks {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  #actualities #walks article img {
+    height: 11.7rem;
+  }
+  #actualities #new-house {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  #actualities #new-house article img {
+    height: 11.7rem;
+  }
+  #actualities #renovation {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  #actualities #renovation article img {
+    height: 11.7rem;
+  }
+  #actualities #moving {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  #actualities #moving article img {
+    height: 11.7rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
