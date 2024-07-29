@@ -2094,7 +2094,7 @@ function move_dir( $from, $to, $overwrite = false ) {
 		 * A 200ms delay gives time for the filesystem to update its cache,
 		 * prevents "Operation not permitted", and "No such file or directory" warnings.
 		 *
-		 * This delay is used in other projects, including Composer.
+		 * This delay is used in other actualities, including Composer.
 		 * @link https://github.com/composer/composer/blob/2.5.1/src/Composer/Util/Platform.php#L228-L233
 		 */
 		usleep( 200000 );

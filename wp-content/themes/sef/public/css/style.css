@@ -1245,7 +1245,7 @@ form div {
   background-color: #184AE4;
   color: white;
   text-align: center;
-  padding: 2.6666rem 0 1.3333rem;
+  padding: 2.6666rem 0;
   margin-bottom: 4.6666rem;
 }
 .transition h2 {
@@ -1275,7 +1275,7 @@ form div {
 
 @media (min-width: 1000px) {
   .transition {
-    padding: 2.6666rem 0;
+    padding: 2.6666rem 0 1.333rem;
     margin-bottom: 4.6666rem;
   }
   .transition h2 {
@@ -1287,6 +1287,57 @@ form div {
     margin: 1.3333rem auto;
     width: 20%;
   }
+}
+#actualities {
+  width: 80%;
+  margin: auto;
+}
+#actualities article {
+  margin-bottom: 2.6666rem;
+}
+#actualities article h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 700;
+  padding: 1.3333rem 0;
+  text-align: center;
+}
+#actualities #mezzanine {
+  background-color: #736E6A;
+}
+#actualities #mezzanine img {
+  object-fit: cover;
+  width: 100%;
+}
+#actualities #mezzanine h3 {
+  color: white;
+}
+#actualities #walks {
+  background-color: #6488F7;
+}
+#actualities #walks img {
+  object-fit: cover;
+  width: 100%;
+}
+#actualities #new-house {
+  background-color: #79B8E9;
+}
+#actualities #new-house img {
+  object-fit: cover;
+  width: 100%;
+}
+#actualities #renovation {
+  background-color: #B0C2F8;
+}
+#actualities #renovation img {
+  object-fit: cover;
+  width: 100%;
+}
+#actualities #moving {
+  background-color: #7991DA;
+}
+#actualities #moving img {
+  object-fit: cover;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

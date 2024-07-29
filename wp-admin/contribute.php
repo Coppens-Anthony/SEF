@@ -41,7 +41,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 			<img src="<?php echo esc_url( admin_url( 'images/contribute-main.svg?ver=6.4' ) ); ?>" alt="" width="290" height="290" />
 		</div>
 		<div class="column is-vertically-aligned-center">
-			<p><?php _e( 'Do you use WordPress for work, for personal projects, or even just for fun? You can help shape the long-term success of the open source project that powers millions of websites around the world.' ); ?></p>
+			<p><?php _e( 'Do you use WordPress for work, for personal actualities, or even just for fun? You can help shape the long-term success of the open source project that powers millions of websites around the world.' ); ?></p>
 			<p><?php _e( 'Join the diverse WordPress contributor community and connect with other people who are passionate about maintaining a free and open web.' ); ?></p>
 
 			<ul>

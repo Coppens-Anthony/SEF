@@ -44,7 +44,7 @@
 					<!-- /wp:list-item -->
 
 					<!-- wp:list-item -->
-					<li><?php echo esc_html_x( 'Showcase your projects.', 'Sample list item', 'twentytwentyfour' ); ?></li>
+					<li><?php echo esc_html_x( 'Showcase your actualities.', 'Sample list item', 'twentytwentyfour' ); ?></li>
 					<!-- /wp:list-item -->
 
 					<!-- wp:list-item -->

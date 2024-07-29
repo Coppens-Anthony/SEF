@@ -401,7 +401,7 @@ class Cookie {
 	/**
 	 * Parse a cookie string into a cookie object
 	 *
-	 * Based on Mozilla's parsing code in Firefox and related projects, which
+	 * Based on Mozilla's parsing code in Firefox and related actualities, which
 	 * is an intentional deviation from RFC 2109 and RFC 2616. RFC 6265
 	 * specifies some of this handling, but not in a thorough manner.
 	 *
