@@ -221,7 +221,6 @@
                     <h3>D&eacute;placement de la bouquinerie</h3>
                 </article>
             </li>
-
         </ul>
     </section>
     <section class="transition">

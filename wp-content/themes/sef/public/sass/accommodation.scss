@@ -21,6 +21,7 @@
       width: 60%;
       height: 15rem;
       margin: auto;
+      border-radius: 15px;
     }
   }
   .secondHouse {
@@ -52,8 +53,8 @@
         margin-right: 5%;
       }
       img{
+        width: 60%;
         height: 100%;
-        object-fit: cover;
       }
     }
     .secondHouse{

@@ -718,6 +718,9 @@ footer small a {
 }
 
 @media (min-width: 1000px) {
+  .intro_stores {
+    margin-top: 6rem;
+  }
   .intro_stores p {
     width: 30%;
     margin: auto 0 auto 20%;
@@ -797,6 +800,7 @@ footer small a {
   width: 60%;
   height: 15rem;
   margin: auto;
+  border-radius: 15px;
 }
 #houses .secondHouse {
   flex-direction: column-reverse;
@@ -826,8 +830,8 @@ footer small a {
     margin-right: 5%;
   }
   #houses article img {
+    width: 60%;
     height: 100%;
-    object-fit: cover;
   }
   #houses .secondHouse {
     display: flex;
@@ -1061,6 +1065,7 @@ form div {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 6rem;
   }
   .form .contactForm {
     width: 40%;
@@ -1077,7 +1082,7 @@ form div {
   display: flex;
   flex-direction: column;
   width: 80%;
-  margin: 2.6666rem auto;
+  margin: 6rem auto;
 }
 .donateForm .rising form {
   margin-bottom: 1.3333rem;
@@ -1187,58 +1192,106 @@ form div {
     padding: 1rem 8%;
   }
 }
-#gallery article {
+#gallery {
   width: 80%;
-  margin: auto;
-}
-#gallery article img {
-  display: block;
-  max-width: 100%;
-}
-#gallery article .wrapper {
-  overflow: hidden;
-  height: 10rem;
-  width: 100%;
+  margin: auto auto 4rem;
   display: grid;
-  grid-template-columns: 1fr 5fr;
-  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
-#gallery article .gallery {
-  overflow: scroll;
-  scroll-snap-type: x mandatory;
+#gallery h2 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin: 0 auto;
 }
-#gallery article .gallery__img {
-  scroll-snap-align: start;
-  margin-bottom: 1rem;
-  min-height: 5rem;
+#gallery #gallery-one {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
   object-fit: cover;
+  width: 100%;
 }
-#gallery article .lil-nav {
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-#gallery article .lil-nav a {
-  display: flex;
-  margin-bottom: 2rem;
-}
-#gallery article .lil-nav .last {
-  margin-bottom: 0;
-}
-#gallery article .lil-nav__img {
+#gallery #gallery-two {
   object-fit: cover;
-  max-height: 3rem;
+  width: 100%;
+  height: 100%;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+#gallery #gallery-three {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+#gallery #gallery-four {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  object-fit: cover;
+  width: 100%;
+}
+#gallery #gallery-five {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  object-fit: cover;
+  width: 100%;
 }
 
 @media (min-width: 1000px) {
-  #gallery article {
-    margin-left: 20%;
+  #gallery {
+    grid-template-columns: repeat(3, 1fr);
   }
-  #gallery article .wrapper {
-    height: 55vh;
-    width: 70%;
+  #gallery h2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin: 0;
+    width: 80%;
   }
-  #gallery article .gallery__img {
-    margin-bottom: 3rem;
+  #gallery #gallery-one {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  #gallery #gallery-two {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  #gallery #gallery-three {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  #gallery #gallery-four {
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 150%;
+    margin-top: -15.4rem;
+  }
+  #gallery #gallery-five {
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
   }
 }
 .transition {
@@ -1346,11 +1399,12 @@ form div {
   }
   #actualities ul {
     display: grid;
-    grid-template-columns: 31.2% 31.2% 31.2%;
-    grid-template-rows: 15.4rem 15.4rem;
-    grid-row-gap: 2rem;
-    grid-column-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
     margin: auto auto 4.6666rem;
+  }
+  #actualities ul article {
+    margin-bottom: 0;
   }
   #actualities #mezzanine {
     grid-column-start: 1;
