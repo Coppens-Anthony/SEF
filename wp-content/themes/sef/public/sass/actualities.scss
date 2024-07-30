@@ -70,11 +70,13 @@
     }
     ul {
       display: grid;
-      grid-template-columns: 31.2% 31.2% 31.2%;
-      grid-template-rows: 15.4rem 15.4rem;
-      grid-row-gap: 2rem;
-      grid-column-gap: 2rem;
+      grid-template-columns: repeat(2,1fr);
+      gap: 1.5rem;
       margin: auto auto 4.6666rem;
+
+      article{
+        margin-bottom: 0;
+      }
     }
 
     #mezzanine {

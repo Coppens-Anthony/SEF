@@ -138,7 +138,7 @@
                 <a href="/" title="Vers la page d&apos;accueil">Accueil</a>
             </li>
             <li>
-                <a href="sef.php" class="main" title="Vers la page SEF">SEF</a>
+                <a href="sef.php" title="Vers la page SEF">SEF</a>
             </li>
             <li>
                 <a href="stores.php" title="Vers la page des magasins">Magasins</a>

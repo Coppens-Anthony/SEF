@@ -192,8 +192,14 @@
         </div>
     </section>
     <section class="sections" id="gallery">
-        <h2>Galerie</h2>
-
+        <h2>Notre galerie photo</h2>
+        <img src="/wp-content/themes/sef/src/img/gallery/one.jpg" alt="Photo de la vie chez SEF" id="gallery-one">
+        <img src="/wp-content/themes/sef/src/img/gallery/two.jpg" alt="Photo de la vie chez SEF" id="gallery-two">
+        <img src="/wp-content/themes/sef/src/img/gallery/three.jpg" alt="Photo de la vie chez SEF" id="gallery-three">
+        <img src="/wp-content/themes/sef/src/img/gallery/four.jpg" alt="Photo de la vie chez SEF" id="gallery-four">
+        <img src="/wp-content/themes/sef/src/img/gallery/five.jpg" alt="Photo de la vie chez SEF" id="gallery-five">
+        <!--
+        -->
     </section>
     <section class="sections" id="staff">
         <h2>Notre fabuleuse &eacute;quipe</h2>
