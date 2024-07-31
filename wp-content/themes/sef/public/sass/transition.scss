@@ -24,10 +24,20 @@
       background-color: black;
       border-radius: 20px;
       padding: 0.8rem;
+      transition: 0.5s;
+      &:hover{
+        background-color: white;
+        transition: 0.5s;
+      }
 
       a {
         color: white;
-        padding: 0.7rem 0;
+        padding: 0.8rem 0;
+        transition: 0.5s;
+        &:hover{
+          color: black;
+          transition: 0.5s;
+        }
       }
     }
   }
