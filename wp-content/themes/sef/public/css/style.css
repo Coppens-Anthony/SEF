@@ -615,6 +615,9 @@ footer small a {
   footer a {
     font-size: 0.8rem;
   }
+  footer a:hover {
+    text-decoration: underline;
+  }
   footer .footer-information {
     margin: auto auto 2rem;
     padding-top: 4rem;
@@ -1028,10 +1031,6 @@ footer small a {
   color: #184AE4;
   font-weight: 700;
 }
-.contactForm form #newsletter, .contactForm form #accommodationResponse, .contactForm form #emergency, .coords form #newsletter, .coords form #accommodationResponse, .coords form #emergency, .card form #newsletter, .card form #accommodationResponse, .card form #emergency {
-  width: 5%;
-  margin-top: 1rem;
-}
 .contactForm #button, .coords #button, .card #button {
   text-align: center;
   margin-bottom: 1.333rem;
@@ -1074,31 +1073,31 @@ form div {
     width: 40%;
     margin-bottom: 0;
   }
-  .form #newsletter, .form #emergency, .form #accommodationResponse {
-    margin-top: 5rem;
-  }
 }
 .donateForm {
   display: flex;
   flex-direction: column;
   width: 80%;
-  margin: 6rem auto;
+  margin: 4rem auto;
+  text-align: center;
 }
-.donateForm .rising form {
+.donateForm .rising {
   margin-bottom: 1.3333rem;
   border: 1.5px solid #184AE4;
   border-radius: 20px;
 }
-.donateForm .rising .category {
+.donateForm .category {
   display: flex;
   justify-content: space-evenly;
   margin: 0.75rem auto;
   width: 100%;
 }
-.donateForm input[type=radio], .donateForm input[type=checkbox] {
+
+input[type=radio], input[type=checkbox] {
   display: none;
 }
-.donateForm .radio {
+
+.radio {
   color: #184AE4;
   cursor: pointer;
   display: inline-flex;
@@ -1107,32 +1106,51 @@ form div {
   padding: 1em 2em;
   border-radius: 0.5em;
 }
-.donateForm input[type=radio]:checked + label {
+
+input[type=radio]:checked + label {
   background-color: #184AE4;
   color: #ffffff;
   font-weight: 700;
 }
-.donateForm .rise {
+
+input[type=checkbox] + label {
+  border: 1.5px solid black;
+  padding: 1em 2em;
+  color: #184AE4;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+input[type=checkbox][data-selected=true] + label {
+  background-color: #184AE4;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.rise {
   display: flex;
   justify-content: space-evenly;
   margin: 1.3333rem 0;
 }
-.donateForm .rise label {
+.rise label {
   border: 1.5px solid black;
   padding: 1em 2em;
   color: #184AE4;
   border-radius: 10px;
 }
-.donateForm .rise input[type=checkbox]:checked + label {
+.rise input[type=checkbox]:checked + label {
   background-color: #184AE4;
   color: #ffffff;
   font-weight: 700;
 }
-.donateForm .otherRise_container {
+
+.otherRise_container {
   text-align: center;
   margin-bottom: 0.75rem;
 }
-.donateForm #otherRise {
+
+#otherRise {
   margin: auto;
   background-color: white;
   border-radius: 20px;
@@ -1145,17 +1163,35 @@ form div {
 .coords, .card {
   border-radius: 20px;
   margin-bottom: 1.3333rem;
+  text-align: center;
+}
+.coords div, .card div {
+  position: relative;
+}
+.coords div input, .coords div select, .card div input, .card div select {
+  margin: auto;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid black;
+  width: 80%;
+  padding: 0.7rem 5%;
+  color: #184AE4;
+}
+.coords div label, .card div label {
+  position: absolute;
+  top: -0.5rem;
+  left: 18%;
+  background-color: white;
+  padding: 0 3%;
+  color: #184AE4;
+  font-weight: 700;
 }
 
 .last_coords_input {
   margin-bottom: 0.75rem;
 }
 
-.moneyButton {
-  text-align: center;
-  margin-bottom: 1.333rem;
-}
-.moneyButton button {
+button {
   background-color: #184AE4;
   border: 1px solid #184AE4;
   color: white;
@@ -1164,30 +1200,35 @@ form div {
   cursor: pointer;
   transition: 0.5s;
 }
-.moneyButton button:hover {
+button:hover {
   background-color: white;
   color: #184AE4;
   transition: 0.5s;
 }
 
 @media (min-width: 1000px) {
-  .donateForm div {
-    justify-content: space-between;
-    display: flex;
+  .donateForm {
+    margin-top: 6rem;
   }
-  .donateForm div article {
+  .donateForm .form-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .donateForm .form-wrapper fieldset {
     width: 30%;
   }
-  .donateForm div article .rise {
-    margin-bottom: 2.6666rem;
+  .donateForm .form-wrapper fieldset div {
+    justify-content: space-between;
+    display: flex;
+    margin: 2.6666rem auto;
   }
-  .donateForm div .rising .category {
-    margin-bottom: 2.6666rem;
+  .donateForm .form-wrapper fieldset .rise, .donateForm .form-wrapper fieldset .category {
+    justify-content: space-evenly;
   }
-  .donateForm .moneyButton {
+  .donateForm .form-wrapper .moneyButton {
     margin-top: 3rem;
   }
-  .donateForm .moneyButton button {
+  .donateForm .form-wrapper .moneyButton button {
     font-size: 1.5rem;
     padding: 1rem 8%;
   }
