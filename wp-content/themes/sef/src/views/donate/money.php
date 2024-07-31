@@ -15,59 +15,7 @@
 <header>
     <nav id="mainNav">
         <a href="/">
-            <svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.83 114.78">
-                <defs>
-                    <style>
-                        .cls-1 {
-                            font-size: 44.66px;
-                        }
-
-                        .cls-1, .cls-2, .cls-3 {
-                            fill: #3253a1;
-                        }
-
-                        .cls-4 {
-                            stroke-width: 2px;
-                        }
-
-                        .cls-4, .cls-5 {
-                            fill: #fff;
-                            stroke: #3253a1;
-                            stroke-miterlimit: 10;
-                        }
-
-                        .cls-2 {
-                            font-size: 33.98px;
-                        }
-
-                        .cls-3 {
-                            font-size: 31.03px;
-                        }
-                    </style>
-                </defs>
-                <g id="Calque_1-2" data-name="Calque 1">
-                    <rect class="cls-4" x="2.07" y="56.02" width="64.32" height="56.12" rx=".38" ry=".38"/>
-                    <text class="cls-1" transform="translate(0 49.52) scale(1.15 1)">
-                        <tspan x="0" y="0">s</tspan>
-                    </text>
-                    <text class="cls-3" transform="translate(24.39 25.97) scale(1.15 1)">
-                        <tspan x="0" y="0">E</tspan>
-                    </text>
-                    <text class="cls-2" transform="translate(49.82 49.96) scale(1.15 1)">
-                        <tspan x="0" y="0">F</tspan>
-                    </text>
-                    <path class="cls-4"
-                          d="m34.27,21.52L2.46,55.79c-.09.09-.01.23.13.23h63.63c.14,0,.21-.14.13-.23l-31.82-34.27c-.07-.07-.19-.07-.26,0Z"/>
-                    <path class="cls-5" d="m28.12,96.29h12.55v16.32h-12.35c-.11,0-.2-.09-.2-.2v-16.12h0Z"/>
-                    <path class="cls-5" d="m35.73,114.17l-7.61-1.57v-15.58c0-.38.4-.66.83-.57l6.78,1.4v16.32Z"/>
-                    <g>
-                        <rect class="cls-5" x="40.85" y="65.33" width="14.41" height="15.59"
-                              transform="translate(96.11 146.25) rotate(180)"/>
-                        <rect class="cls-5" x="13.2" y="65.33" width="14.41" height="15.59"
-                              transform="translate(40.8 146.25) rotate(180)"/>
-                    </g>
-                </g>
-            </svg>
+            <img src="/wp-content/themes/sef/src/logo/SVG/logo.svg" alt="Logo du site">
         </a>
         <h2 class="sr-only">Navigation Principale</h2>
         <a href="../donate.php" id="donateMobile" title="Vers la page de soutien">SOUTENIR</a>
@@ -96,59 +44,7 @@
     </nav>
     <nav class="onlyScreen">
         <a href="/">
-            <svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.83 114.78">
-                <defs>
-                    <style>
-                        .cls-1 {
-                            font-size: 44.66px;
-                        }
-
-                        .cls-1, .cls-2, .cls-3 {
-                            fill: #3253a1;
-                        }
-
-                        .cls-4 {
-                            stroke-width: 2px;
-                        }
-
-                        .cls-4, .cls-5 {
-                            fill: #fff;
-                            stroke: #3253a1;
-                            stroke-miterlimit: 10;
-                        }
-
-                        .cls-2 {
-                            font-size: 33.98px;
-                        }
-
-                        .cls-3 {
-                            font-size: 31.03px;
-                        }
-                    </style>
-                </defs>
-                <g id="Calque_1-2" data-name="Calque 1">
-                    <rect class="cls-4" x="2.07" y="56.02" width="64.32" height="56.12" rx=".38" ry=".38"/>
-                    <text class="cls-1" transform="translate(0 49.52) scale(1.15 1)">
-                        <tspan x="0" y="0">s</tspan>
-                    </text>
-                    <text class="cls-3" transform="translate(24.39 25.97) scale(1.15 1)">
-                        <tspan x="0" y="0">E</tspan>
-                    </text>
-                    <text class="cls-2" transform="translate(49.82 49.96) scale(1.15 1)">
-                        <tspan x="0" y="0">F</tspan>
-                    </text>
-                    <path class="cls-4"
-                          d="m34.27,21.52L2.46,55.79c-.09.09-.01.23.13.23h63.63c.14,0,.21-.14.13-.23l-31.82-34.27c-.07-.07-.19-.07-.26,0Z"/>
-                    <path class="cls-5" d="m28.12,96.29h12.55v16.32h-12.35c-.11,0-.2-.09-.2-.2v-16.12h0Z"/>
-                    <path class="cls-5" d="m35.73,114.17l-7.61-1.57v-15.58c0-.38.4-.66.83-.57l6.78,1.4v16.32Z"/>
-                    <g>
-                        <rect class="cls-5" x="40.85" y="65.33" width="14.41" height="15.59"
-                              transform="translate(96.11 146.25) rotate(180)"/>
-                        <rect class="cls-5" x="13.2" y="65.33" width="14.41" height="15.59"
-                              transform="translate(40.8 146.25) rotate(180)"/>
-                    </g>
-                </g>
-            </svg>
+            <img src="/wp-content/themes/sef/src/logo/SVG/logo.svg" alt="Logo du site">
         </a>
         <h2 class="sr-only">Navigation pour oridnateur</h2>
         <ul>

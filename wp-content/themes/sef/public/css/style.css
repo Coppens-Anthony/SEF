@@ -120,7 +120,7 @@ header #mainNav a {
   margin-left: 15%;
   margin-right: 20%;
 }
-header #mainNav a svg {
+header #mainNav a img {
   height: 5rem;
 }
 header #mainNav #donateMobile {
@@ -179,7 +179,7 @@ header .onlyScreen {
 header .onlyScreen a {
   margin-right: 20%;
 }
-header .onlyScreen a svg {
+header .onlyScreen a img {
   height: 5rem;
 }
 header .onlyScreen ul {
@@ -1361,10 +1361,20 @@ button:hover {
   background-color: black;
   border-radius: 20px;
   padding: 0.8rem;
+  transition: 0.5s;
+}
+.transition ul .transition-button:hover {
+  background-color: white;
+  transition: 0.5s;
 }
 .transition ul .transition-button a {
   color: white;
-  padding: 0.7rem 0;
+  padding: 0.8rem 0;
+  transition: 0.5s;
+}
+.transition ul .transition-button a:hover {
+  color: black;
+  transition: 0.5s;
 }
 
 @media (min-width: 1000px) {
