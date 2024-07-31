@@ -45,6 +45,9 @@ footer {
 
     a {
       font-size: 0.8rem;
+      &:hover{
+        text-decoration: underline;
+      }
     }
 
     .footer-information {
