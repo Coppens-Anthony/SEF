@@ -4,9 +4,8 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
-$newsletter = $_POST['newsletter'];
 
-$message = 'Identifiant : ' . $name . '<br>' . ' Email : ' . $email . '<br>' . 'Sujet : ' .$subject . '<br>' . ' Message : ' . $message . '<br>' . ' Newsletter : ' . $newsletter;
+$message = 'Identifiant : ' . $name . '<br>' . ' Email : ' . $email . '<br>' . 'Sujet : ' . $subject . '<br>' . ' Message : ' . $message;
 
 //Import PHPMailer classes into the global namespace
 //These must be at the top of your script, not inside a function
@@ -43,7 +42,7 @@ try {
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
-    header('Location: /index.php'); // Change index.php to the actual path of your home page
+    header('Location: /contact/');
     exit(); // Make sure no further code is executed after the redirection
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
