@@ -20,57 +20,57 @@
 <h1 class="sr-only" itemprop="legalName"><?= $title ?></h1>
 <header>
     <nav id="mainNav">
-        <a href="/">
+        <a href="/accueil/" class="<?= urlIs('/accueil/') ? 'main' : '' ?>">
             <img src="/wp-content/themes/sef/src/logo/SVG/logo.svg" alt="Logo du site">
         </a>
         <h2 class="sr-only">Navigation Principale</h2>
-        <a href="/donate/" id="donateMobile" title="Vers la page de soutien">SOUTENIR</a>
+        <a href="/soutenir/" id="donateMobile" title="Vers la page de soutien">SOUTENIR</a>
         <label for="burgerMenu">☰</label>
         <input type="checkbox" id="burgerMenu" name="burgerMenu">
         <nav id="burgerNav">
             <h3 class="sr-only">Burger Menu Navigation</h3>
             <ul>
                 <li>
-                    <a href="/accueil/" class="<?= urlIs('/accueil/') ? 'main' : 'menu__item' ?>" title="Vers la page d'accueil">Accueil</a>
+                    <a href="/accueil/" class="<?= urlIs('/accueil/') ? 'main' : '' ?>" title="Vers la page d'accueil">Accueil</a>
                 </li>
                 <li>
-                    <a href="/sef/" class="<?= urlIs('/sef/') ? 'main' : 'menu__item' ?>" title="Vers la page SEF">SEF</a>
+                    <a href="/sef/" class="<?= urlIs('/sef/') ? 'main' : '' ?>" title="Vers la page SEF">SEF</a>
                 </li>
                 <li>
-                    <a href="/magasins/" class="<?= urlIs('/magasins/') ? 'main' : 'menu__item' ?>" title="Vers la page des magasins">Magasins</a>
+                    <a href="/magasins/" class="<?= urlIs('/magasins/') ? 'main' : '' ?>" title="Vers la page des magasins">Magasins</a>
                 </li>
                 <li>
-                    <a href="/hebergements/" class="<?= urlIs('/hebergements/') ? 'main' : 'menu__item' ?>" title="Vers la page des hébergements">Hébergements</a>
+                    <a href="/hebergements/" class="<?= urlIs('/hebergements/') ? 'main' : '' ?>" title="Vers la page des hébergements">Hébergements</a>
                 </li>
                 <li class="navContact">
-                    <a href="/contact/" class="<?= urlIs('/contact/') ? 'main' : 'menu__item' ?>" title="Vers la page de contact">Contact</a>
+                    <a href="/contact/" class="<?= urlIs('/contact/') ? 'main' : '' ?>" title="Vers la page de contact">Contact</a>
                 </li>
             </ul>
         </nav>
     </nav>
     <nav class="onlyScreen">
-        <a href="/accueil/" class="<?= urlIs('/accueil/') ? 'main' : 'menu__item' ?>">
+        <a href="/accueil/" class="<?= urlIs('/accueil/') ? 'main' : '' ?>">
             <img src="/wp-content/themes/sef/src/logo/SVG/logo.svg" alt="Logo du site">
         </a>
         <h2 class="sr-only">Navigation pour ordinateur</h2>
         <ul>
             <li>
-                <a href="/accueil/" class="<?= urlIs('/accueil/') ? 'main' : 'menu__item' ?>" title="Vers la page d'accueil">Accueil</a>
+                <a href="/accueil/" class="<?= urlIs('/accueil/') ? 'main' : '' ?>" title="Vers la page d'accueil">Accueil</a>
             </li>
             <li>
-                <a href="/sef/" class="<?= urlIs('/sef/') ? 'main' : 'menu__item' ?>" title="Vers la page SEF">SEF</a>
+                <a href="/sef/" class="<?= urlIs('/sef/') ? 'main' : '' ?>" title="Vers la page SEF">SEF</a>
             </li>
             <li>
-                <a href="/magasins/" class="<?= urlIs('/magasins/') ? 'main' : 'menu__item' ?>" title="Vers la page des magasins">Magasins</a>
+                <a href="/magasins/" class="<?= urlIs('/magasins/') ? 'main' : '' ?>" title="Vers la page des magasins">Magasins</a>
             </li>
             <li>
-                <a href="/hebergements/" class="<?= urlIs('/hebergements/') ? 'main' : 'menu__item' ?>" title="Vers la page des hébergements">Hébergements</a>
+                <a href="/hebergements/" class="<?= urlIs('/hebergements/') ? 'main' : '' ?>" title="Vers la page des hébergements">Hébergements</a>
             </li>
             <li class="navContact">
-                <a href="/contact/" class="<?= urlIs('/contact/') ? 'main' : 'menu__item' ?>" title="Vers la page de contact">Contact</a>
+                <a href="/contact/" class="<?= urlIs('/contact/') ? 'main' : '' ?>" title="Vers la page de contact">Contact</a>
             </li>
             <li id="donateScreen">
-                <a href="/soutenir/" class="<?= urlIs('/soutenir/') ? 'main' : 'menu__item' ?>" title="Vers la page de soutien">Soutenir</a>
+                <a href="/soutenir/" class="<?= urlIs('/soutenir/') ? 'main' : '' ?>" title="Vers la page de soutien">Soutenir</a>
             </li>
         </ul>
     </nav>

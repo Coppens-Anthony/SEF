@@ -68,5 +68,5 @@ include 'header.php'; ?>
         </form>
     </section>
 </main>
-<script src="src/js/main.js"></script>
+<script src="/wp-content/themes/sef/src/js/main.js"></script>
 <?php include 'footer.php'; ?>
