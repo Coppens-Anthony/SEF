@@ -2,10 +2,17 @@
 /*
 Template Name: SEF Page
 */
+
+$first_section_title = get_field('first_section_title');
+$second_section_title = get_field('second_section_title');
+$third_section_title = get_field('third_section_title');
+$fourth_section_title = get_field('fourth_section_title');
+
+
 include 'header.php'; ?>
 <main>
     <section class="sections" id="missions">
-        <h2>Notre mission</h2>
+        <h2><?= $first_section_title ?></h2>
         <div>
             <p>est de fournir un refuge sûr et accumulation à ceux qui en ont besoin, tout en les
                 accompagnant vers une vie stable et épanouie. Nous offrons un hébergement temporaire garantissant un
@@ -22,7 +29,7 @@ include 'header.php'; ?>
         </div>
     </section>
     <section class="sections" id="gallery">
-        <h2>Notre galerie photo</h2>
+        <h2><?= $second_section_title ?></h2>
         <img src="/wp-content/themes/sef/src/img/gallery/one.jpg" alt="Photo de la vie chez SEF" id="gallery-one">
         <img src="/wp-content/themes/sef/src/img/gallery/two.jpg" alt="Photo de la vie chez SEF" id="gallery-two">
         <img src="/wp-content/themes/sef/src/img/gallery/three.jpg" alt="Photo de la vie chez SEF" id="gallery-three">
@@ -30,7 +37,7 @@ include 'header.php'; ?>
         <img src="/wp-content/themes/sef/src/img/gallery/five.jpg" alt="Photo de la vie chez SEF" id="gallery-five">
     </section>
     <section class="sections" id="staff">
-        <h2>Notre fabuleuse &eacute;quipe</h2>
+        <h2><?= $third_section_title ?></h2>
         <div class="slider-wrapper">
             <div class="staff-mobile">
                 <ul class="slider">
@@ -264,7 +271,7 @@ include 'header.php'; ?>
         </div>
     </section>
     <section class="sections" id="history">
-        <h2>L&apos;histoire du SEF</h2>
+        <h2><?= $fourth_section_title ?></h2>
         <article class="timeline">
             <h3 class="sr-only">Ligne du temps</h3>
             <div class="timeline_container">

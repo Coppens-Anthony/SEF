@@ -2,6 +2,10 @@
 /*
 Template Name: Stores Page
 */
+
+$first_section_title = get_field('first_section_title');
+$second_section_title = get_field('second_section_title');
+
 include 'header.php'; ?>
 <main>
     <section class="intro_stores">
@@ -20,7 +24,7 @@ include 'header.php'; ?>
              width="206"/>
     </section>
     <section class="sections" id="stores">
-        <h2>Nos Magasins</h2>
+        <h2><?= $first_section_title ?></h2>
         <div>
             <article>
                 <img alt="Image du magasin" src="/wp-content/themes/sef/src/img/stores/bric_a_brac.jpg" height="212" width="320"/>
@@ -46,7 +50,7 @@ include 'header.php'; ?>
         </div>
     </section>
     <section class="sections" id="table">
-        <h2>Les horaires</h2>
+        <h2><?= $second_section_title ?></h2>
         <table>
             <caption class="sr-only">Horaires d&apos;ouverture des magasins</caption>
             <tr>

@@ -2,6 +2,9 @@
 /*
 Template Name: Contact Page
 */
+
+$first_section_title = get_field('first_section_title');
+
 include 'header.php'; ?>
 <main>
     <section class="form">

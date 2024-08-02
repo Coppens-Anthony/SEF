@@ -1,3 +1,8 @@
+<?php
+    $title = get_field('page_title');
+?>
+
+
 <!doctype html>
 <html lang="fr">
 <head>
@@ -7,11 +12,12 @@
           content="accueil, ouverture, famille, dimension humaine et relationnelle, inscription du don, &eacute;conomie circulaire, &eacute;cologie, asbl, sans-abris, projets, h&eacute;bergements">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" href="/wp-content/themes/sef/src/logo/SVG/logo.svg">
     <link rel="stylesheet" href="<?= dw_asset("css/style.css") ?>">
-    <title>Accueil</title>
+    <title><?= $title ?></title>
 </head>
 <body itemscope itemtype="https://schema.org/Organization">
-<h1 class="sr-only" itemprop="legalName">Accueil</h1>
+<h1 class="sr-only" itemprop="legalName"><?= $title ?></h1>
 <header>
     <nav id="mainNav">
         <a href="/">

@@ -2,6 +2,13 @@
 /*
 Template Name: Donate Page
 */
+
+$first_section_title = get_field('first_section_title');
+$second_section_title = get_field('second_section_title');
+$third_section_title = get_field('third_section_title');
+$fourth_section_title = get_field('fourth_section_title');
+
+
 include 'header.php'; ?>
 <main>
     <section class="intro">
@@ -11,7 +18,7 @@ include 'header.php'; ?>
         <img alt="Image repr&eacute;sentant les projets" src="/wp-content/themes/sef/src/img/donate.jpg" height="1564" width="2000" id="donateImg"/>
     </section>
     <section class="sections" id="help">
-        <h2>Votre aide nous aide &agrave; :</h2>
+        <h2><?= $first_section_title ?></h2>
         <article>
             <h3 class="sr-only">Ce que nous pouvons faire avec vos dons</h3>
             <ul class="firstUl">
@@ -33,7 +40,7 @@ include 'header.php'; ?>
         </article>
     </section>
     <section class="sections">
-        <h2>Les diff&eacute;rents types de dons</h2>
+        <h2><?= $second_section_title ?></h2>
         <article class="donateCategory">
             <h3 class="sr-only">Les moyens de donation</h3>
             <div>
@@ -55,7 +62,7 @@ include 'header.php'; ?>
         </article>
     </section>
     <section class="sections" id="volunteer">
-        <h2>Le b&eacute;n&eacute;volat</h2>
+        <h2><?= $third_section_title ?></h2>
         <div>
             <p>Rejoignez-nous comme b&eacute;n&eacute;vole au SEF et transformez des vies, y compris la v&ocirc;tre. Ensemble,
                 faisons la diff&eacute;rence par la solidarit&eacute; et l&apos;entraide. Votre cœur et votre temps ont un impact
@@ -64,7 +71,7 @@ include 'header.php'; ?>
         </div>
     </section>
     <section class="sections" id="store">
-        <h2>Les achats dans nos magasins</h2>
+        <h2><?= $fourth_section_title ?></h2>
         <div>
             <p>Visitez nos magasins SEF&nbsp;:&nbsp;chaque achat est un geste de cœur qui soutient des familles.
                 Faites la diff&eacute;rence tout en d&eacute;couvrant des tr&eacute;sors uniques. Ensemble, changeons des vies.</p>

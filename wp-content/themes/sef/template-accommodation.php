@@ -2,6 +2,9 @@
 /*
 Template Name: Accommoadation Page
 */
+
+$first_section_title = get_field('first_section_title');
+
 include 'header.php'; ?>
 <main>
     <section class="intro">
@@ -14,7 +17,7 @@ include 'header.php'; ?>
         <img alt="Image repr&eacute;sentant les projets" src="/wp-content/themes/sef/src/img/accommodation.jpg" height="500" width="1000"/>
     </section>
     <section class="sections" id="houses">
-        <h2>Nos h&eacute;bergements</h2>
+        <h2><?= $first_section_title ?></h2>
         <article>
             <h3 class="sr-only">Premier h&eacute;bergement</h3>
             <div>
